@@ -80,7 +80,7 @@
 	--theme-bg-accent: hsla(var(--color-orange-95), 1);
 	--theme-code-inline-bg: hsla(var(--color-gray-95), 1);
 	--theme-code-inline-text: var(--theme-text);
-	--theme-code-bg: hsla(217, 19%, 27%, 1);
+	--theme-code-bg: rgb(0, 0, 0);
 	--theme-code-text: hsla(var(--color-gray-95), 1);
 	--theme-navbar-bg: hsla(var(--color-base-white), 100%, 1);
 	--theme-navbar-height: 6rem;
