@@ -1,0 +1,76 @@
+backend:
+  name: github
+  repo: IQ-tech/firebolt-docs
+  branch: main
+  open_authoring: true
+publish_mode: editorial_workflow
+local_backend: true
+media_folder: "/public/images/uploads"
+public_folder: "/public/images/uploads"
+editor:
+  preview: false
+collections:
+  - name: "docs-ptBR"
+    label: "Docs pt-BR"
+    folder: "src/pages/pt-BR"
+    create: true
+    slug: "{{url}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "layout",
+          name: "layout",
+          widget: "hidden",
+          default: "../../layouts/MainLayout.astro",
+        }
+      - {
+          label: "URL",
+          name: "url",
+          widget: "string",
+          pattern:
+            [
+              "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+              "A url can have no spaces or special characters",
+            ],
+        }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "docs-en"
+    label: "Docs en"
+    folder: "src/pages/en"
+    create: true
+    slug: "{{url}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "layout",
+          name: "layout",
+          widget: "hidden",
+          default: "../../layouts/MainLayout.astro",
+        }
+      - {
+          label: "URL",
+          name: "url",
+          widget: "string",
+          pattern:
+            [
+              "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+              "A url can have no spaces or special characters",
+            ],
+        }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
