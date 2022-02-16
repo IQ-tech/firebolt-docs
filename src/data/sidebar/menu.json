@@ -1,0 +1,72 @@
+{
+  "title": "Sidebar (Menu)",
+  "description": "Multi language menu",
+  "menu": [
+    {
+      "lang": "pt-BR",
+      "itens": [
+        {
+          "text": "Documentação",
+          "header": true
+        },
+        {
+          "text": "Introdução",
+          "page": "introduction",
+          "header": false
+        },
+        {
+          "text": "Instalação",
+          "page": "instalation",
+          "header": false
+        },
+        {
+          "header": false,
+          "text": "Tutorial",
+          "page": "tutorial"
+        },
+        {
+          "header": true,
+          "text": "Guias"
+        },
+        {
+          "header": false,
+          "text": "Esquema Json",
+          "page": "schema"
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "itens": [
+        {
+          "text": "Documentation",
+          "header": true
+        },
+        {
+          "text": "Introduction",
+          "page": "introduction",
+          "header": false
+        },
+        {
+          "header": false,
+          "text": "Installation",
+          "page": "installation"
+        },
+        {
+          "header": false,
+          "text": "Tutorial",
+          "page": "tutorial"
+        },
+        {
+          "header": true,
+          "text": "Guide"
+        },
+        {
+          "header": false,
+          "text": "Json Schema",
+          "page": "schema"
+        }
+      ]
+    }
+  ]
+}
