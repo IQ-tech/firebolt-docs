@@ -24,6 +24,7 @@ collections:
           widget: "hidden",
           default: "../../layouts/MainLayout.astro",
         }
+      - { label: "language", name: "lang", widget: "hidden", default: "pt-BR" }
       - {
           label: "URL",
           name: "url",
@@ -56,6 +57,7 @@ collections:
           widget: "hidden",
           default: "../../layouts/MainLayout.astro",
         }
+      - { label: "language", name: "lang", widget: "hidden", default: "en" }
       - {
           label: "URL",
           name: "url",
@@ -74,3 +76,31 @@ collections:
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "sidebar"
+    label: "Sidebar"
+    folder: "src/data/sidebar/"
+    create: true
+    slug: "menu"
+    extension: json
+    format: json
+    fields:
+      - { label: "Title", name: "title", widget: string }
+      - { label: "Description", name: "description", widget: string }
+      - label: "Menu"
+        name: "menu"
+        widget: "list"
+        collapsed: true
+        fields:
+          - label: "Language"
+            name: "lang"
+            widget: "string"
+          - label: "Itens"
+            name: "itens"
+            collapsed: true
+            widget: "list"
+            summary: "{{fields.text}} - Page[{{fields.page}}]"
+            fields:
+              - { label: Text, name: text, widget: string }
+              - { label: Header, name: header, widget: boolean, default: false }
+              - { label: Page, name: page, widget: string, required: false }
