@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "post-build": "node ./post-build.mjs -path https://iq-tech.github.io/firebolt-docs/",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && post-build",
     "preview": "astro preview",
     "cms": "npx netlify-cms-proxy-server"
   },

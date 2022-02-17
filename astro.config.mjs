@@ -14,4 +14,6 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
 		// Enable the React renderer, for the Algolia search component
 		'@astrojs/renderer-react',
 	],
+
+	dist: "dist/firebolt-docs/"
 });
