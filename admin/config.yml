@@ -3,6 +3,8 @@ backend:
   repo: IQ-tech/firebolt-docs
   branch: main
   open_authoring: true
+  site_domain: iq-tech.github.io/firebolt-docs/
+
 publish_mode: editorial_workflow
 local_backend: true
 media_folder: "/public/images/uploads"
