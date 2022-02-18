@@ -8,13 +8,16 @@
     "start": "astro dev",
     "build": "astro build && yarn post-build",
     "preview": "astro preview",
-    "cms": "npx netlify-cms-proxy-server"
+    "cms": "npx netlify-cms-proxy-server",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist/firebolt-docs"
   },
   "dependencies": {
     "@docsearch/react": "^1.0.0-alpha.28"
   },
   "devDependencies": {
+    "@astrojs/renderer-preact": "^0.4.0",
     "astro": "^0.22.20",
-    "@astrojs/renderer-preact": "^0.4.0"
+    "gh-pages": "^3.2.3"
   }
 }
