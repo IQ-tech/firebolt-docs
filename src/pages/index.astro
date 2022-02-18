@@ -1,6 +1,10 @@
 <script>
 	// Redirect your homepage to the first page of documentation.
 	// If you have a landing page, remove this script and add it here!
-	window.location.pathname = `/pt-BR/introduction`;
+	const redirect = window.location.host === 'localhost:3000'
+		? '/pt-BR/introduction'
+		: '/firebolt-docs/pt-BR/introduction'
+
+	window.location.pathname = redirect;
 </script>
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

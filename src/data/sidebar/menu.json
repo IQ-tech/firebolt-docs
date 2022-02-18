@@ -16,7 +16,7 @@
         },
         {
           "text": "Instalação",
-          "page": "instalation",
+          "page": "installation",
           "header": false
         },
         {
@@ -32,6 +32,15 @@
           "header": false,
           "text": "Esquema Json",
           "page": "schema"
+        },
+        {
+          "header": true,
+          "text": "Exemplos"
+        },
+        {
+          "header": false,
+          "text": "Exemplo 1",
+          "page": "example-1"
         }
       ]
     },
@@ -65,6 +74,15 @@
           "header": false,
           "text": "Json Schema",
           "page": "schema"
+        },
+        {
+          "header": true,
+          "text": "Examples"
+        },
+        {
+          "header": false,
+          "text": "Example 1",
+          "page": "example-1"
         }
       ]
     }
