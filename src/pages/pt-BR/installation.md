@@ -2,7 +2,7 @@
 title: Instalação
 description: Lorem ipsum dolor sit amet - 2
 layout: ../../layouts/MainLayout.astro
-url: instalation
+url: installation
 date: 2022-02-16T13:20:25.269Z
 ---
 

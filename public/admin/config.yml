@@ -96,7 +96,10 @@ collections:
         fields:
           - label: "Language"
             name: "lang"
-            widget: "string"
+            widget: "select"
+            options:
+              - { label: "Portuguese", value: "pt-BR" }
+              - { label: "English", value: "en" }
           - label: "Itens"
             name: "itens"
             collapsed: true
