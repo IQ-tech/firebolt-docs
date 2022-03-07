@@ -50,14 +50,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
 <meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
-<meta name="description" property="og:description" content="Docs intro">
+<meta name="description" property="og:description" content="Firebolt is a toolkit designed to speed up the process of creating and maintaining multistep form flows.">
 <meta property="og:site_name" content="Firebolt">
 
 <!-- Twitter Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="astrodotbuild">
 <meta name="twitter:title" content="Introduction 🚀 Firebolt">
-<meta name="twitter:description" content="Docs intro">
+<meta name="twitter:description" content="Firebolt is a toolkit designed to speed up the process of creating and maintaining multistep form flows.">
 <meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
 <meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
 
@@ -78,11 +78,11 @@
 
 
 
-<script type="module" src="../../assets/introduction.2d8e3748.js"></script>
+<script type="module" src="../../assets/introduction.437d6b96.js"></script>
 
 
 
-<link rel="stylesheet" href="../../assets/LanguageSelect.70a59863.css"><link rel="stylesheet" href="../../assets/Search.1b726706.css"><link rel="stylesheet" href="../../assets/ThemeToggleButton.f26aa56f.css"><link rel="stylesheet" href="../../assets/introduction.27b53482.css">
+<link rel="stylesheet" href="../../assets/LanguageSelect.70a59863.css"><link rel="stylesheet" href="../../assets/Search.1b726706.css"><link rel="stylesheet" href="../../assets/ThemeToggleButton.f26aa56f.css"><link rel="stylesheet" href="../../assets/schema.1401fbc9.css">
 
 
 
@@ -181,18 +181,66 @@
 	<section class="main-section astro-53BNYOZL">
 		<h1 class="content-title astro-53BNYOZL" id="overview">Introduction</h1>
 		<nav class="block sm:hidden astro-53BNYOZL">
-			<astro-root uid="Zi3kRM"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-2"><a href="#getting-started">Getting Started</a></li></ul></astro-root>
+			<astro-root uid="1YOQlH"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-2"><a href="#what-is-firebolt">What is Firebolt?</a></li><li class="header-link depth-2"><a href="#why-to-use-firebolt">Why to use Firebolt?</a></li><li class="header-link depth-2"><a href="#firebolt-x-other-technologies">Firebolt x Other technologies</a></li><li class="header-link depth-2"><a href="#architecture">Architecture</a></li><li class="header-link depth-2"><a href="#packages-that-make-up-firebolt">Packages that make up Firebolt</a></li></ul></astro-root>
 		</nav>
-		<p><strong>Welcome to Astro!</strong></p><p>This is the <code data-astro-raw="">docs</code> starter template. It contains all of the features that you need to build a Markdown-powered documentation site, including:</p><ul>
-<li>✅ <strong>Full Markdown support</strong></li>
-<li>✅ <strong>Responsive mobile-friendly design</strong></li>
-<li>✅ <strong>Sidebar navigation</strong></li>
-<li>✅ <strong>Search (powered by Algolia)</strong></li>
-<li>✅ <strong>Multi-language i18n</strong></li>
-<li>✅ <strong>Automatic table of contents</strong></li>
-<li>✅ <strong>Automatic list of contributors</strong></li>
-<li>✅ (and, best of all) <strong>dark mode</strong></li>
-</ul><h2 id="getting-started">Getting Started</h2><p>To get started with this theme, check out the <code data-astro-raw="">README.md</code> in your new project directory. It provides documentation on how to use and customize this template for your own project. Keep the README around so that you can always refer back to it as you build.</p><p>Found a missing feature that you can’t live without? Please suggest it on Discord <a href="https://astro.build/chat">(#ideas-and-suggestions channel)</a> and even consider adding it yourself on GitHub! Astro is an open source project and contributions from developers like you are how we grow!</p><p>Good luck out there, Astronaut. 🧑‍🚀</p>
+		<h2 id="what-is-firebolt">What is Firebolt?</h2><p>Firebolt is a toolkit built to accelerate the process of the creation and maintaining of multistep forms flow. It’s a fullstack tool (javascript/typescript) with code sharing to support this scenario.</p><p>Configurated oriented, using just one Schema JSON file we can define a full form experience. The JSON file is interpreted both by the back-end and by the front-end.</p><p>The Firebolt idea isn’t to be a form generator due to following this could be difficult the routinely form customizations on those kinds of forms but be an organizer/orchestrator of all the processes to create and manage the form.</p><h2 id="why-to-use-firebolt">Why to use Firebolt?</h2><ul>
+<li>Avoid rewrite of similar forms and code;</li>
+<li>Falicitate the existent forms modification such as: change the field position and the order os the steps;</li>
+<li>Define a form default that can be used both by the back-end and by the front-end, facilitating the creation and the maintenance of the forms;</li>
+<li>Allow the versioning of the forms;</li>
+<li>Decrease the friction between the back-end and front-end related to the endpoints, due to the data formatting sent and the endpoints used is automated by the Firebolt;</li>
+<li>The developer can customize the components of each form (thematization) and also create presets for config some input fields.</li>
+</ul><h2 id="firebolt-x-other-technologies">Firebolt x Other technologies</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>Firebolt</th>
+<th>React JSON Schema Form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Render a form from a JSON file</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Integrate the back-end and the front-end</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Handle with the data formatting sent to the back-end and with the endpoints</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Minimalist JSON Schema</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Support multistep forms with back-end and front-end comunication</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Support for different themes</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table><p>The use of Firebolt is more indicated to situations that you need to create a infrastructure of multistep forms, between back-end and front-end (data base, endpoints and etc)</p><h2 id="architecture">Architecture</h2><p>The project is mainly composed of two parts, the API and the Client.</p><p>The Firebolt Client is a front-end library that can be used on any React application, it provides a series of components that helps with common front-end tasks when building forms such as steps progression, HTTP requests, user sessions, and so on. It can automatically connect with the Firebolt API, with this the developer does not have to worry about endpoints, request bodies, and so on.</p><p>Both the API and the Client use a common library to perform validations, the Firebolt Validators collection, We’ll talk a little more about it soon.</p><h2 id="packages-that-make-up-firebolt">Packages that make up Firebolt</h2><ul>
+<li>Client</li>
+<li>Core</li>
+<li>Validators</li>
+<li>Themes</li>
+</ul>
 	</section>
 	<nav class="block sm:hidden astro-53BNYOZL">
 		
@@ -217,7 +265,7 @@
 				
 <nav class="sidebar-nav astro-2YE6FU27" aria-labelledby="grid-right">
 	<div class="sidebar-nav-inner astro-2YE6FU27">
-		<astro-root uid="Zi3kRM"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-2"><a href="#getting-started">Getting Started</a></li></ul></astro-root>
+		<astro-root uid="1YOQlH"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-2"><a href="#what-is-firebolt">What is Firebolt?</a></li><li class="header-link depth-2"><a href="#why-to-use-firebolt">Why to use Firebolt?</a></li><li class="header-link depth-2"><a href="#firebolt-x-other-technologies">Firebolt x Other technologies</a></li><li class="header-link depth-2"><a href="#architecture">Architecture</a></li><li class="header-link depth-2"><a href="#packages-that-make-up-firebolt">Packages that make up Firebolt</a></li></ul></astro-root>
 		
 
 <ul class="astro-ZVQSX46V">
