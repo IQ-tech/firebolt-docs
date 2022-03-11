@@ -46,5 +46,5 @@ JTdCJTIyY3BmJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMjM0NTY3ODkwJTJDJTIybWFzayUyMiUzQSUy
 Now just pass the url as a parameter:
 
 ```plaintext
-http://yoursite.com/?autofill:JTdCJTIyY3BmJTIyJTNBJTdCJTIy...
+https://www.yoursite.com/?autofill:JTdCJTIyY3BmJTIyJTNBJTdCJTIy...
 ```

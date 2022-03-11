@@ -47,5 +47,5 @@ JTdCJTIyY3BmJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMjM0NTY3ODkwJTJDJTIybWFzayUyMiUzQSUy
 Agora é só passar na url como parâmetro:
 
 ```plaintext
-http://www.seusite.com/?autofill:JTdCJTIyY3BmJTIyJT...
+https://www.seusite.com/?autofill:JTdCJTIyY3BmJTIyJT...
 ```
