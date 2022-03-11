@@ -7,6 +7,15 @@ url: autofill
 date: 2022-03-11T15:05:13.787Z
 ---
 
+### O que é?
+
+Esta funcionalidade permite que alguns dados de um lead sejam automaticamente preenchidos no formulário, vejamos um caso de uso:
+
+1. Enviamos um email para algum lead oferecendo um produto específico.
+2. Esse link redireciona o usuário para um formulário que utiliza o firebolt.
+3. A url do link possuí um código base64 que contém algumas informações que já possuímos desse usuário
+4. O firebolt detecta o código na url e automaticamente preenche alguns campos do formulário para o usuário
+
 ### Como usar
 
 Para utilizar basta seguir algumas regras simples:

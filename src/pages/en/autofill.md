@@ -7,6 +7,15 @@ url: autofill
 date: 2022-03-11T20:35:21.981Z
 ---
 
+### What is it?
+
+This functionality allows some data of a lead to be automatically filled in the form, let's see a use case:
+
+1. We send an email to a lead offering a specific product.
+2. This link redirects the user to a form that uses firebolt.
+3. The url of the link has a base64 code that contains some information that we already have about this user
+4. firebolt detects the code in the url and automatically fills some form fields for the user
+
 ### How to use
 
 To use it, just follow a few simple rules:
