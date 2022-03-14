@@ -16,6 +16,14 @@ This functionality allows some data of a lead to be automatically filled in the 
 3. The url of the link has a base64 code that contains some information that we already have about this user
 4. firebolt detects the code in the url and automatically fills some form fields for the user
 
+### How it works?
+
+Autofill, as available in the url, is applied to every step of the form.
+
+During the screen creation process, when we read the form configuration JSON, we also check if the autofill parameter is present in the url, if so, we decrypt the information, compare the keys informed and, if the value exists in the autofill object, we do set a pre-established value for the field in question.
+
+For this reason, the key informed in the autofill object **MUST** be the same as the one provided in the form configuration JSON.
+
 ### How to use
 
 To use it, just follow a few simple rules:
@@ -27,8 +35,10 @@ To use it, just follow a few simple rules:
 
 ### Example
 
+The implementation to obtain a base64 can be done in several ways, this is just one of them.
+
 ```jsx
-const autofill = (userInfo) => {
+const createAutofillData = (userInfo) => {
   const autofillObject = {
     cpf: {
       value: userInfo?.cpf,
@@ -46,7 +56,7 @@ const autofill = (userInfo) => {
 };
 ```
 
-The `autofill()` returns:
+The `createAutofillData()` returns:
 
 ```plaintext
 JTdCJTIyY3BmJTIyJTNBJTdCJTIydmFsdWUlMjIlM0ExMjM0NTY3ODkwJTJDJTIybWFzayUyMiUzQSUyMmNwZiUyMiU3RCUyQyUyMmZ1bGxfbmFtZSUyMiUzQSU3QiUyMnZhbHVlJTIyJTNBJTIySm9obiUyMERvZSUyMiUyQyUyMm1hc2slMjIlM0ElMjIlMjIlN0QlN0Q=
