@@ -39,7 +39,7 @@ Se encontrou um bug você pode reportá-lo usando a ferramenta de [issues do gi
 1. Atualize seu repositório local no branch `main`mais recente. Talvez seu bug já tenha sido corrigido na versão mais recente;
 2. Verifique se o bug já foi reportado por outra pessoa fazendo uma busca pelas issues.
 
-Se o bug realmente não foi resolvido ou acolhido então está na hora de [criar uma nova issue](https://github.com/ccuffs/template/issues/new). No título da issue tente resumir da melhor forma o problema evitando títulos genéricos como ***"Problemas na instalação"***.
+Se o bug realmente não foi resolvido ou acolhido então está na hora de [criar uma nova issue](https://github.com/IQ-tech/firebolt/issues). No título da issue tente resumir da melhor forma o problema evitando títulos genéricos como **"Problemas na validação"**, e opte por um mais detalhado como **"Problemas na validação do campo tipo data”**.
 
 Se possível inclua imagens ou vídeos à descrição do bug para facilitar o processo de reprodução. 
 
@@ -47,8 +47,8 @@ Se possível inclua imagens ou vídeos à descrição do bug para facilitar o pr
 
 Outra ótima forma de contribuir é indicando melhorias ao código do projeto e em como ele está estruturado. Se você tem qualquer ideia de como podemos melhorar alguma abordagem na solução de problemas, refatoração de código, melhoria em algum recurso ou qualquer outra coisa relacionada, siga estes passos:
 
-1. Certifique-se de que sua ideia já não esteja sendo abordada em nosso [roadmap](https://github.com/ccuffs/site-static-template/blob/master/ROADMAP.md);
-2. Também verifique se a ideia já não está pressente em nossas [issues do github](https://github.com/ccuffs/template/issues);
+1. Certifique-se de que sua ideia já não esteja sendo abordada em nosso roadmap;
+2. Também verifique se a ideia já não está pressente em nossas [issues do github](https://github.com/IQ-tech/firebolt/issues);
 3. Defenda a sua ideia e explique de forma convincente porque ela deve ser acolhida. Eis algumas questões a considerar:
 
    1. Você realmente esta propondo uma ideia só ou um conjunto de ideias?
@@ -87,7 +87,7 @@ Pensou em alguma outra forma de contribuir? Compartilha com a gente!
 
 Depois de ter um plano de ação relativamente claro você deve estar pronto para contribuir com código. Para isso faça um fork do projeto e trabalhe em cima de um branch diferente de `main` implementando suas soluções. 
 
-Antes de abrir seu PR (pull request) certique-se que:
+Antes de abrir seu PR (pull request) certifique-se que:
 
 * O código realmente resolve um problema real (de preferência baseado em alguma issue levantada);
 * Seu PR resolve uma issue apenas. Se você quiser fazer mais de uma coisa, divida em vários PRs;
