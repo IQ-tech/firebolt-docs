@@ -25,6 +25,11 @@
           "page": "tutorial"
         },
         {
+          "header": false,
+          "text": "Contribuição",
+          "page": "contributing"
+        },
+        {
           "header": true,
           "text": "Guias"
         },
