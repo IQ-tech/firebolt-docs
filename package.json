@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@docsearch/react": "^1.0.0-alpha.28",
-    "@iq-firebolt/json-schema": "^0.5.1-next.9"
+    "@iq-firebolt/json-schema": "^0.6.0"
   },
   "devDependencies": {
     "@astrojs/renderer-preact": "^0.4.0",
