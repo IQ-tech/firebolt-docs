@@ -35,6 +35,15 @@
         },
         {
           "header": true,
+          "text": "Utilidades"
+        },
+        {
+          "header": false,
+          "text": "Autofill",
+          "page": "autofill"
+        },
+        {
+          "header": true,
           "text": "Exemplos"
         },
         {
@@ -74,6 +83,15 @@
           "header": false,
           "text": "Json Schema",
           "page": "schema"
+        },
+        {
+          "header": true,
+          "text": "Utilities"
+        },
+        {
+          "header": false,
+          "text": "Autofill",
+          "page": "autofill"
         },
         {
           "header": true,
