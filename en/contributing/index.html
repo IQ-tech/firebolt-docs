@@ -1,0 +1,370 @@
+<!DOCTYPE html><html dir="ltr" lang="en" class="initial astro-THSZY4RF"><head>
+		<!-- Global Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/svg+xml" href="https://iq-tech.github.io/firebolt-docs/favicon.svg">
+<link rel="alternate icon" type="image/x-icon" href="https://iq-tech.github.io/firebolt-docs/favicon.ico">
+
+<link rel="sitemap" href="https://iq-tech.github.io/firebolt-docs/sitemap.xml">
+
+<!-- Global CSS -->
+
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&amp;display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script type="module" src="https://iq-tech.github.io/firebolt-docs/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+
+		
+<!-- Page Metadata -->
+<link rel="canonical" href="http://localhost:3000/en/contributing/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="Contributing 🚀 Firebolt">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:3000/en/contributing/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="how to contribute to firebolt">
+<meta property="og:site_name" content="Firebolt">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="Contributing 🚀 Firebolt">
+<meta name="twitter:description" content="how to contribute to firebolt">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+		<title>Contributing 🧹 Firebolt</title>
+		
+	
+
+
+
+
+
+
+
+<script type="module" src="../../assets/contributing.03edecbc.js"></script>
+
+
+
+<link rel="stylesheet" href="../../assets/LanguageSelect.70a59863.css"><link rel="stylesheet" href="../../assets/Search.1b726706.css"><link rel="stylesheet" href="../../assets/ThemeToggleButton.f26aa56f.css"><link rel="stylesheet" href="../../assets/tutorial.037f059b.css">
+
+
+
+</head>
+
+	<body>
+		
+<header class="astro-YSNLA6DX">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-CXECKFLK"><span class="astro-CXECKFLK">Skip to Content</span></a>
+
+
+
+	<nav class="nav-wrapper astro-YSNLA6DX" title="Top Navigation">
+		<div class="menu-toggle astro-YSNLA6DX">
+			<astro-root uid="Z12Vj7s"><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-root>
+		</div>
+		<div class="logo flex astro-YSNLA6DX">
+			<img src="https://iq-tech.github.io/firebolt-docs/logo.png" alt="Firebolt Logo" class="astro-YSNLA6DX">
+			<a href="https://iq-tech.github.io/firebolt-docs/" class="astro-YSNLA6DX">
+				<!-- <h1>{CONFIG.SITE.title ?? "Documentation"}</h1> -->
+			</a>
+		</div>
+		<div style="flex-grow: 1;" class="astro-YSNLA6DX"></div>
+		<astro-root uid="Zrkg16"><div class="language-select-wrapper"><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.6 77.3" height="1.2em" width="1.2em"><path fill="currentColor" d="M61,24.6h7.9l18.7,51.6h-7.7l-5.4-15.5H54.3l-5.6,15.5h-7.2L61,24.6z M72.6,55l-8-22.8L56.3,55H72.6z"></path><path fill="currentColor" d="M53.6,60.6c-10-4-16-9-22-14c0,0,1.3,1.3,0,0c-6,5-20,13-20,13l-4-6c8-5,10-6,19-13c-2.1-1.9-12-13-13-19h8          c4,9,10,14,10,14c10-8,10-19,10-19h8c0,0-1,13-12,24l0,0c5,5,10,9,19,13L53.6,60.6z M1.6,16.6h56v-8h-23v-7h-9v7h-24V16.6z"></path></svg><select class="language-select"><option selected="" value="en">English</option><option value="pt-BR">Português (BR)</option></select></div></astro-root>
+		
+	</nav>
+</header>
+
+
+
+		<main class="layout astro-THSZY4RF">
+			<aside id="grid-left" class="grid-sidebar astro-THSZY4RF" title="Site Navigation">
+				
+<nav aria-labelledby="grid-left" class="astro-AEMBVVFW">
+	<ul class="nav-groups astro-AEMBVVFW">
+		<li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Documentation</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/en/introduction" aria-current="false" class="astro-AEMBVVFW">
+									Introduction
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/en/installation" aria-current="false" class="astro-AEMBVVFW">
+									Installation
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/en/tutorial" aria-current="false" class="astro-AEMBVVFW">
+									Tutorial
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/en/contributing" aria-current="page" class="astro-AEMBVVFW">
+									Contributing
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Guide</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/en/schema" aria-current="false" class="astro-AEMBVVFW">
+									Json Schema
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Utilities</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/en/autofill" aria-current="false" class="astro-AEMBVVFW">
+									Autofill
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Examples</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/en/example-1" aria-current="false" class="astro-AEMBVVFW">
+									Example 1
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li>
+	</ul>
+</nav>
+
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+
+			</aside>
+			<div id="grid-main" class="astro-THSZY4RF">
+				
+<article id="article" class="content astro-53BNYOZL">
+	<section class="main-section astro-53BNYOZL">
+		<h1 class="content-title astro-53BNYOZL" id="overview">Contributing</h1>
+		<nav class="block sm:hidden astro-53BNYOZL">
+			<astro-root uid="ZRDdxX"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-3"><a href="#what-is-a-contribution">What is a contribution?</a></li><li class="header-link depth-3"><a href="#how-to-contribute-to-firebolt">How to contribute to Firebolt</a></li><li class="header-link depth-3"><a href="#suggesting-features">Suggesting features</a></li><li class="header-link depth-3"><a href="#discussing-the-issues">Discussing the issues</a></li><li class="header-link depth-3"><a href="#other-ways-to-contribute">Other ways to contribute</a></li><li class="header-link depth-3"><a href="#how-to-create-pull-requests">How to create pull requests</a></li></ul></astro-root>
+		</nav>
+		<h3 id="what-is-a-contribution">What is a contribution?</h3><p>Every change made to the repository can be considered a contribution.
+Commit is the main way to contribute, whether it’s creating a new feature, fixing a bug, creating a test or writing documentation, but it’s not the only one.</p><p>Github counts the following actions as a contribution:</p><ul>
+<li>Commits</li>
+<li>Pull Requests</li>
+<li>Issues</li>
+<li>Discussions</li>
+</ul><h3 id="how-to-contribute-to-firebolt">How to contribute to Firebolt</h3><p>To contribute to Firebolt, before making any changes, first discuss your idea with the ADM’s, either through an issue, email or any other method.</p><p>There are several ways to contribute to the project:</p><ul>
+<li>Reporting bugs</li>
+<li>Indicating improvements</li>
+<li>Suggesting features</li>
+<li>Discussing the issues</li>
+<li>Making pull requests</li>
+</ul><h4 id="reporting-bugs">Reporting bugs</h4><p>If you found a bug you can report it using the issues tool on github. However, before submitting your bug, it is important to do the following checks:</p><ol>
+<li>Update your local repository to the latest main branch. Perhaps your bug has already been fixed in the latest version;</li>
+<li>Check if the bug has already been reported by someone else by searching the issues.</li>
+</ol><p>If the bug really wasn’t resolved or accepted then it’s time to create a new issue. In the issue title, try to summarize the problem as best as possible, avoiding generic titles such as ”<strong>Validation problems</strong>”, and opt for a more detailed one such as ”<strong>Data type field validation problems</strong>“.</p><p>If possible, include images or videos in the bug description to facilitate the reproduction process.</p><h4 id="indicating-improvements">Indicating improvements</h4><p>Another great way to contribute is by pointing out improvements to the project’s code and how it’s structured. If you have any idea how we can improve some troubleshooting approach, code refactoring, feature improvement, or anything else related, please follow these steps:</p><ol>
+<li>Make sure your idea is not already covered in our roadmap;</li>
+<li>Also check if the idea is not already present in our github issues;</li>
+<li>Defend your idea and explain convincingly why it should be accepted. Here are some questions to consider:
+<ol>
+<li>Are you really proposing a single idea or a set of ideas?</li>
+<li>What problem does your idea solve?</li>
+<li>Why is your suggestion better than what’s already in the code?</li>
+<li>Is it really worth taking the time to implement your idea within our priorities?</li>
+</ol>
+</li>
+</ol><p>Having gone through the sieve of all these questions, it is enough to <a href="https://github.com/IQ-tech/firebolt/issues/new">create a new issue</a>.</p><h3 id="suggesting-features">Suggesting features</h3><p>Given what we are building together with the community, new features have relative priority. It’s only worth submitting your feature suggestion if:</p><ol>
+<li>The resource in question solves a problem that is not solved by anything that already exists in the project;</li>
+<li>The resource solves a real problem validated by people who are in direct contact with the use of the project.</li>
+</ol><p>To create your feature request, just <a href="https://github.com/IQ-tech/firebolt/issues/new">create a new issue</a>.</p><h3 id="discussing-the-issues">Discussing the issues</h3><p>Before we go into the code itself it is very important that we discuss with the community how each issue will be addressed. Each and every question must be put up for discussion so that anyone who wants to solve that problem has as much information as possible to carry out a solution.</p><p>Ideally all issues should have a clear action plan before any code is written. We know that this is often not possible, and it is necessary to explore and better analyze what has been indicated. In these cases, publish all your findings in the discussions indicating paths and receiving feedback from the community regarding what is being proposed.</p><h3 id="other-ways-to-contribute">Other ways to contribute</h3><p>If you don’t work with code but want to help the project, there are many other ways to contribute:</p><ul>
+<li>Help with project documentation;</li>
+<li>Organize events and give talks about the project;</li>
+<li>Did you see a discussion that interests you and where you can add even without technical knowledge? Don’t be shy and also participate in the github issues.</li>
+</ul><p>Have you thought of any other way to contribute? Share with us!</p><h3 id="how-to-create-pull-requests">How to create pull requests</h3><p>Once you have a relatively clear plan of action you should be ready to contribute code. For this, fork the project and work on a branch other than main implementing your solutions.</p><p>Before opening your PR (pull request) make sure that:</p><ul>
+<li>The code actually solves a real problem (preferably based on an issue raised);</li>
+<li>Your PR resolves only one issue. If you want to do more than one thing, split it up into multiple PRs;</li>
+<li>Your code is functional (or something close to it). Provide testing if possible;</li>
+<li>Your commit messages are clear and describe the work well.</li>
+</ul><h4 id="1--fork-firebolt">1- Fork Firebolt</h4><p>Go to <a href="https://github.com/IQ-tech/firebolt">https://github.com/IQ-tech/firebolt</a> and <strong>fork</strong> the Firebolt.</p><p>This will create a copy of Firebolt in your gIthub account.</p><h4 id="2--clone-firebolt">2- Clone Firebolt</h4><p>Now clone the Firebolt that was forked to your machine.</p><p>Open a terminal where you want to clone Firebolt and run the following git command:</p><pre class="language-null"><code data-astro-raw="" class="language-null">git clone "URL that you just copied"</code></pre><p>where “URL you just copied” (without the quotes) is the URL to the repository (your Firebolt fork).</p><p>For example:</p><pre class="language-null"><code data-astro-raw="" class="language-null">git clone https://github.com/&lt;your-user&gt;/firebolt.git</code></pre><p>where&nbsp;<code data-astro-raw="">your-user</code> put your github username. Here you are copying Firebolt content from github to your computer.</p><h4 id="3--create-a-branch">3- create a branch</h4><p>Change to the repository directory on your computer (if you’re not already there):</p><pre class="language-null"><code data-astro-raw="" class="language-null">cd firebolt</code></pre><p>Now create a branch using the command&nbsp;git checkout (the default used for branch name and commits is <a href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a>):</p><p>Example of a new functionality:</p><p><code data-astro-raw="">git checkout -b feat/new-feature</code></p><p>Example of a bug fix:</p><p><code data-astro-raw="">git checkout -b fix/bug-title-home</code></p><h4 id="4--how-to-make-commits">4- How to make commits</h4><p>Make the necessary changes.</p><p>Add these changes to the branch you just created using the <code data-astro-raw="">git add</code> command:</p><p>Now commit these changes using <code data-astro-raw="">git commit</code> (Follow <a href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a> and <a href="https://gitmoji.dev/">https://gitmoji.dev/</a> to make your commit):</p><p><code data-astro-raw="">git commit -m "conventionalcommit(scope): :GITMOJI: message”</code></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conventionalcommit</td>
+<td>- follow: <a href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a></td>
+</tr>
+<tr>
+<td>(scope)</td>
+<td>- changed project location, today there are the following scopes: all client client-core validators lab entities blueberry-theme json-schema</td>
+</tr>
+<tr>
+<td>:GITMOJI:</td>
+<td>- use: <a href="https://gitmoji.dev/">https://gitmoji.dev/</a>  O :GITMOJI: é opcional</td>
+</tr>
+<tr>
+<td>message</td>
+<td>- message describing the change (must be in English).</td>
+</tr>
+</tbody>
+</table><p><strong>Example:</strong></p><pre class="language-null"><code data-astro-raw="" class="language-null">git commit -m "feat(client) :speech_balloon: updating main title"</code></pre><h4 id="5--push-changes-to-github">5- Push changes to github</h4><p>Submit your changes using the command&nbsp;<code data-astro-raw="">git push</code>:</p><p><strong>Example:</strong></p><pre class="language-bash"><code data-astro-raw="" class="language-bash"><span class="token function">git</span> push  origin <span class="token operator">&lt;</span>feat/new-feature<span class="token operator">&gt;</span></code></pre><p>replacing <code data-astro-raw="">feat/new-feature</code> with the name of the branch you created earlier.</p><h4 id="6--submit-your-changes-for-review">6- Submit your changes for review</h4><p>If you go to your repository on github, you will see a&nbsp;<code data-astro-raw="">Compare &amp; pull request</code> button. Click that button. Or click on <code data-astro-raw="">Pull requests</code> then on <code data-astro-raw="">New pull request</code></p><p>Select your branch and open a <code data-astro-raw="">Pull request</code> for the <code data-astro-raw="">main</code> branch of <code data-astro-raw="">IQ-tech/firebolt</code></p><p><strong>Fill in the pull request template</strong></p><pre class="language-markdown"><code data-astro-raw="" class="language-markdown"><span class="token comment">&lt;!--- Provide a general summary of your changes in the title above --&gt;</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Description</span>
+
+<span class="token comment">&lt;!--- Describe your changes in detail --&gt;</span>
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Motivation and Context</span>
+
+<span class="token comment">&lt;!--- Why is this change required? What problem does it solve? --&gt;</span>
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Screenshots and links</span>
+
+<span class="token hr punctuation">---</span></code></pre><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;! --- Provide a general summary of your changes in the title above -&gt;</td>
+<td>In the title, fill in a general summary of your changes.</td>
+</tr>
+<tr>
+<td>&lt;! --- Describe your changes in detail -&gt;</td>
+<td>replace with a description of what has changed in the project.</td>
+</tr>
+<tr>
+<td>&lt;! --- Why is this change required? What problem does it solve? -&gt;</td>
+<td>replace with a description of the need for the change and what problem it solves.</td>
+</tr>
+<tr>
+<td>Screenshots and links</td>
+<td>Fill in if necessary images, gifs or videos.</td>
+</tr>
+</tbody>
+</table><p>Example:<strong>:</strong></p><pre class="language-markdown"><code data-astro-raw="" class="language-markdown">
+docs: updating README for example
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Description</span>
+
+entering an example text in the README
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Motivation and Context</span>
+
+an example improvement
+
+<span class="token hr punctuation">---</span>
+
+<span class="token bold"><span class="token punctuation">**</span><span class="token content">Screenshots and links</span><span class="token punctuation">**</span></span>
+&lt;.img src="example /&gt;
+
+<span class="token hr punctuation">---</span></code></pre><p>Finally click on <code data-astro-raw="">Create pull request</code> .</p><h4 id="7--approved-pull-request">7- Approved pull request</h4><p>Once the pull request is approved, the feature branch can be merged into the <code data-astro-raw="">main</code> branch, at which point a new firebolt prerelease containing the added change will be released.</p><p>The feature will also be added to the next official release of the library (when a repository admin merges the <code data-astro-raw="">main</code> branch into the <code data-astro-raw="">latest</code> branch.</p>
+	</section>
+	<nav class="block sm:hidden astro-53BNYOZL">
+		
+
+<ul class="astro-ZVQSX46V">
+	
+	
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-ZVQSX46V">
+	<astro-root uid="1Gmxo9"><div class="theme-toggle"><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillrule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" cliprule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme"></label><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme"></label></div></astro-root>
+</div>
+
+
+
+	</nav>
+</article>
+
+
+
+			</div>
+			<aside id="grid-right" class="grid-sidebar astro-THSZY4RF" title="Table of Contents">
+				
+<nav class="sidebar-nav astro-2YE6FU27" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-2YE6FU27">
+		<astro-root uid="ZRDdxX"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-3"><a href="#what-is-a-contribution">What is a contribution?</a></li><li class="header-link depth-3"><a href="#how-to-contribute-to-firebolt">How to contribute to Firebolt</a></li><li class="header-link depth-3"><a href="#suggesting-features">Suggesting features</a></li><li class="header-link depth-3"><a href="#discussing-the-issues">Discussing the issues</a></li><li class="header-link depth-3"><a href="#other-ways-to-contribute">Other ways to contribute</a></li><li class="header-link depth-3"><a href="#how-to-create-pull-requests">How to create pull requests</a></li></ul></astro-root>
+		
+
+<ul class="astro-ZVQSX46V">
+	
+	
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-ZVQSX46V">
+	<astro-root uid="1Gmxo9"><div class="theme-toggle"><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillrule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" cliprule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme"></label><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme"></label></div></astro-root>
+</div>
+
+
+
+	</div>
+</nav>
+
+
+
+			</aside>
+		</main>
+	</body></html>

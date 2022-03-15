@@ -1,0 +1,375 @@
+<!DOCTYPE html><html dir="ltr" lang="pt-BR" class="initial astro-THSZY4RF"><head>
+		<!-- Global Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/svg+xml" href="https://iq-tech.github.io/firebolt-docs/favicon.svg">
+<link rel="alternate icon" type="image/x-icon" href="https://iq-tech.github.io/firebolt-docs/favicon.ico">
+
+<link rel="sitemap" href="https://iq-tech.github.io/firebolt-docs/sitemap.xml">
+
+<!-- Global CSS -->
+
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&amp;display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script type="module" src="https://iq-tech.github.io/firebolt-docs/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+
+		
+<!-- Page Metadata -->
+<link rel="canonical" href="http://localhost:3000/pt-BR/contributing/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="Contribuição 🚀 Firebolt">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:3000/pt-BR/contributing/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="Documentação de como contribuir com o projeto.">
+<meta property="og:site_name" content="Firebolt">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="Contribuição 🚀 Firebolt">
+<meta name="twitter:description" content="Documentação de como contribuir com o projeto.">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+		<title>Contribuição 🧹 Firebolt</title>
+		
+	
+
+
+
+
+
+
+
+<script type="module" src="../../assets/contributing.a0a82028.js"></script>
+
+
+
+<link rel="stylesheet" href="../../assets/LanguageSelect.70a59863.css"><link rel="stylesheet" href="../../assets/Search.1b726706.css"><link rel="stylesheet" href="../../assets/ThemeToggleButton.f26aa56f.css"><link rel="stylesheet" href="../../assets/tutorial.037f059b.css">
+
+
+
+</head>
+
+	<body>
+		
+<header class="astro-YSNLA6DX">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-CXECKFLK"><span class="astro-CXECKFLK">Skip to Content</span></a>
+
+
+
+	<nav class="nav-wrapper astro-YSNLA6DX" title="Top Navigation">
+		<div class="menu-toggle astro-YSNLA6DX">
+			<astro-root uid="Z12Vj7s"><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-root>
+		</div>
+		<div class="logo flex astro-YSNLA6DX">
+			<img src="https://iq-tech.github.io/firebolt-docs/logo.png" alt="Firebolt Logo" class="astro-YSNLA6DX">
+			<a href="https://iq-tech.github.io/firebolt-docs/" class="astro-YSNLA6DX">
+				<!-- <h1>{CONFIG.SITE.title ?? "Documentation"}</h1> -->
+			</a>
+		</div>
+		<div style="flex-grow: 1;" class="astro-YSNLA6DX"></div>
+		<astro-root uid="2dAlSq"><div class="language-select-wrapper"><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.6 77.3" height="1.2em" width="1.2em"><path fill="currentColor" d="M61,24.6h7.9l18.7,51.6h-7.7l-5.4-15.5H54.3l-5.6,15.5h-7.2L61,24.6z M72.6,55l-8-22.8L56.3,55H72.6z"></path><path fill="currentColor" d="M53.6,60.6c-10-4-16-9-22-14c0,0,1.3,1.3,0,0c-6,5-20,13-20,13l-4-6c8-5,10-6,19-13c-2.1-1.9-12-13-13-19h8          c4,9,10,14,10,14c10-8,10-19,10-19h8c0,0-1,13-12,24l0,0c5,5,10,9,19,13L53.6,60.6z M1.6,16.6h56v-8h-23v-7h-9v7h-24V16.6z"></path></svg><select class="language-select"><option value="en">English</option><option selected="" value="pt-BR">Português (BR)</option></select></div></astro-root>
+		
+	</nav>
+</header>
+
+
+
+		<main class="layout astro-THSZY4RF">
+			<aside id="grid-left" class="grid-sidebar astro-THSZY4RF" title="Site Navigation">
+				
+<nav aria-labelledby="grid-left" class="astro-AEMBVVFW">
+	<ul class="nav-groups astro-AEMBVVFW">
+		<li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Documentação</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/introduction" aria-current="false" class="astro-AEMBVVFW">
+									Introdução
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/installation" aria-current="false" class="astro-AEMBVVFW">
+									Instalação
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/tutorial" aria-current="false" class="astro-AEMBVVFW">
+									Tutorial
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/contributing" aria-current="page" class="astro-AEMBVVFW">
+									Contribuição
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Guias</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/schema" aria-current="false" class="astro-AEMBVVFW">
+									Esquema Json
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Utilidades</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/autofill" aria-current="false" class="astro-AEMBVVFW">
+									Autofill
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Exemplos</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/example-1" aria-current="false" class="astro-AEMBVVFW">
+									Exemplo 1
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li>
+	</ul>
+</nav>
+
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+
+			</aside>
+			<div id="grid-main" class="astro-THSZY4RF">
+				
+<article id="article" class="content astro-53BNYOZL">
+	<section class="main-section astro-53BNYOZL">
+		<h1 class="content-title astro-53BNYOZL" id="overview">Contribuição</h1>
+		<nav class="block sm:hidden astro-53BNYOZL">
+			<astro-root uid="62LJe"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-3"><a href="#o-que-é-uma-contribuição">O que é uma contribuição?</a></li><li class="header-link depth-3"><a href="#como-contribuir-no-firebolt">Como contribuir no Firebolt</a></li><li class="header-link depth-3"><a href="#reportando-bugs">Reportando bugs</a></li><li class="header-link depth-3"><a href="#indicando-melhorias">Indicando melhorias</a></li><li class="header-link depth-3"><a href="#sugerindo-funcionalidades">Sugerindo funcionalidades</a></li><li class="header-link depth-3"><a href="#discutindo-as-issues">Discutindo as issues</a></li><li class="header-link depth-3"><a href="#outras-formas-de-contribuir">Outras formas de contribuir</a></li><li class="header-link depth-3"><a href="#como-criar-pull-requests">Como criar pull requests</a></li></ul></astro-root>
+		</nav>
+		<h3 id="o-que-é-uma-contribuição">O que é uma contribuição?</h3><p>Toda alteração feita no repositório pode ser considerada uma contribuição.
+O commit é a principal forma de contribuir, seja criando uma nova funcionalidade, corrigindo um bug, criando um teste ou escrevendo uma documentação, mas não é a única.</p><p>O github contabiliza como contribuição as seguintes ações:</p><ul>
+<li>Commits</li>
+<li>Pull Requests</li>
+<li>Issues</li>
+<li>Discussons</li>
+</ul><h3 id="como-contribuir-no-firebolt">Como contribuir no Firebolt</h3><p>Para contribuir com o Firebolt, antes de qualquer alteração, primeiro discuta a sua ideia com os ADM`s, seja por meio de uma issue, e-mail ou qualquer outro método.</p><p>Observe que temos alguns padrões(leia a <a href="https://iq-tech.github.io/firebolt-docs/en/introduction/">documentação</a>), siga-os em todas as suas interações com o projeto.</p><p>Existem diversas formas de contribuir com o projeto:</p><ul>
+<li>Reportando bugs</li>
+<li>Indicando melhorias</li>
+<li>Sugerindo funcionalidades</li>
+<li>Discutindo as issues</li>
+<li>Fazendo pull requests</li>
+</ul><h3 id="reportando-bugs"><strong>Reportando bugs</strong></h3><p>Se encontrou um bug você pode reportá-lo usando a ferramenta de&nbsp;<a href="https://github.com/IQ-tech/firebolt/issues">issues do github</a>. Porém antes de enviar seu bug é importante fazer as seguintes verificações:</p><ol>
+<li>Atualize seu repositório local no branch&nbsp;<code data-astro-raw="">main</code>mais recente. Talvez seu bug já tenha sido corrigido na versão mais recente;</li>
+<li>Verifique se o bug já foi reportado por outra pessoa fazendo uma busca pelas issues.</li>
+</ol><p>Se o bug realmente não foi resolvido ou acolhido então está na hora de&nbsp;<a href="https://github.com/IQ-tech/firebolt/issues">criar uma nova issue</a>. No título da issue tente resumir da melhor forma o problema evitando títulos genéricos como&nbsp;<strong>“Problemas na validação”</strong>, e opte por um mais detalhado como <strong>“Problemas na validação do campo tipo data”</strong>.</p><p>Se possível inclua imagens ou vídeos à descrição do bug para facilitar o processo de reprodução.</p><h3 id="indicando-melhorias"><strong>Indicando melhorias</strong></h3><p>Outra ótima forma de contribuir é indicando melhorias ao código do projeto e em como ele está estruturado. Se você tem qualquer ideia de como podemos melhorar alguma abordagem na solução de problemas, refatoração de código, melhoria em algum recurso ou qualquer outra coisa relacionada, siga estes passos:</p><ol>
+<li>
+<p>Certifique-se de que sua ideia já não esteja sendo abordada em nosso&nbsp;roadmap;</p>
+</li>
+<li>
+<p>Também verifique se a ideia já não está pressente em nossas&nbsp;<a href="https://github.com/IQ-tech/firebolt/issues">issues do github</a>;</p>
+</li>
+<li>
+<p>Defenda a sua ideia e explique de forma convincente porque ela deve ser acolhida. Eis algumas questões a considerar:</p>
+<ol>
+<li>Você realmente esta propondo uma ideia só ou um conjunto de ideias?</li>
+<li>Qual é o problema que sua ideia resolve?</li>
+<li>Por que sua sugestão é melhor do que o que já existe no código?</li>
+<li>Realmente vale a pena demandar tempo para implementar sua ideia dentro de nossas prioridades?</li>
+</ol>
+</li>
+</ol><p>Tendo passado pelo crivo de todos estes questionamentos basta&nbsp;<a href="https://github.com/IQ-tech/firebolt/issues/new">criar uma nova issue</a>.</p><h3 id="sugerindo-funcionalidades">Sugerindo <strong>funcionalidades</strong></h3><p>Tendo em vista o que estamos construindo junto com a comunidade, novas funcionalidades tem prioridade relativa. Vale a pena enviar sua sugestão de funcionalidade apenas se:</p><ol>
+<li>O recurso em questão resolve um problema que não é resolvido por nada que já exista no projeto;</li>
+<li>O recurso resolve um problema real validado por pessoas que estão em contato direto com a utilização do projeto.</li>
+</ol><p>Para criar seu pedido de funcionalidade basta&nbsp;<a href="https://github.com/IQ-tech/firebolt/issues/new">criar uma nova issue</a>.</p><h3 id="discutindo-as-issues"><strong>Discutindo as issues</strong></h3><p>Antes de partirmos para o código em si é muito importante discutirmos com a comunidade como cada issue será abordada. Toda e qualquer questão deve ser colocada em discussão para que qualquer pessoa que deseje solucionar aquele problema tenha o máximo de informações para executar uma solução.</p><p>Idealmente todas as issues devem ter um plano de ação claro antes que qualquer código seja escrito. Sabemos que muitas vezes isto não é possível, sendo necessário explorar e analisar melhor o que foi indicado. Nestes casos, publique todas as suas descobertas nas discussões indicando caminhos e recebendo o feedback da comunidade a respeito do que está sendo proposto.</p><h3 id="outras-formas-de-contribuir"><strong>Outras formas de contribuir</strong></h3><p>Se você não trabalha com código mas quer ajudar o projeto, existe muitas outras formas de contribuir:</p><ul>
+<li>Ajude com a documentação do projeto;</li>
+<li>Organize eventos e dê palestras sobre o projeto;</li>
+<li>Viu alguma discussão que te interessa e onde você pode acrescentar mesmo sem conhecimento técnico? Não se acanhe e participe também nas issues do github.</li>
+</ul><p>Pensou em alguma outra forma de contribuir? Compartilha com a gente!</p><h3 id="como-criar-pull-requests">Como criar <strong>pull requests</strong></h3><p>Depois de ter um plano de ação relativamente claro você deve estar pronto para contribuir com código. Para isso faça um fork do projeto e trabalhe em cima de um branch diferente de <code data-astro-raw="">main</code> implementando suas soluções.</p><p>Antes de abrir seu PR (pull request) certifique-se que:</p><ul>
+<li>O código realmente resolve um problema real (de preferência baseado em alguma issue levantada);</li>
+<li>Seu PR resolve uma issue apenas. Se você quiser fazer mais de uma coisa, divida em vários PRs;</li>
+<li>Seu código é funcional (ou algo próximo disso). Providencie testes se possível;</li>
+<li>As mensagens de seus commits são claras e descrevem bem o trabalho.</li>
+</ul><h4 id="1--faça-um-fork-do-firebolt">1- Faça um fork <strong>do Firebolt</strong></h4><p>Acesse <a href="https://github.com/IQ-tech/firebolt">https://github.com/IQ-tech/firebolt</a> e faça um <strong>fork</strong> do Firebolt.</p><p>Isso criará uma cópia do Firebolt em sua conta do gIthub.</p><h4 id="2--clonar-o-firebolt">2- <strong>Clonar o Firebolt</strong></h4><p>Agora clone o Firebolt que foi feito o fork para sua máquina.&nbsp;</p><p>Abra um terminal onde deseja clonar o Firebolt e execute o seguinte comando git:</p><pre class="language-null"><code data-astro-raw="" class="language-null">git clone "URL que você acabou de copiar"</code></pre><p>onde tem <strong>“URL que você acabou de copiar”</strong> <strong>(sem as aspas)</strong> é o URL para o repositório (seu fork do Firebolt).</p><p>Por exemplo:</p><pre class="language-null"><code data-astro-raw="" class="language-null">git clone https://github.com/seu-user/firebolt.git</code></pre><p>onde&nbsp;tem<code data-astro-raw="">seu-user</code> coloque seu nome de usuário do github.&nbsp;Aqui você está copiando o conteúdo do Firebolt do github para o seu computador.</p><h4 id="3--crie-um-branch">3- <strong>Crie um branch</strong></h4><p>Mude para o diretório do repositório em seu computador (se você ainda não estiver lá):</p><pre class="language-null"><code data-astro-raw="" class="language-null">cd firebolt</code></pre><p>Agora crie um branch usando o comando&nbsp;<code data-astro-raw="">git checkout</code>(o padrão utilizado para nome do branch e dos commits é <a href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a>):</p><p>Exemplo de uma nova funcionalidade:</p><p><code data-astro-raw="">git checkout -b feat/nova-funcionalidade</code></p><p>Exemplo de uma correção de bug:</p><p><code data-astro-raw="">git checkout -b fix/bug-titulo-home</code></p><h4 id="4--como-fazer-commits">4- Como fazer commits</h4><p>Faça as alterações necessárias.</p><p>Adicione essas alterações à branch que você acabou de criar usando o comando&nbsp;<code data-astro-raw="">git add</code>:</p><p>Agora confirme essas alterações usando o&nbsp;<code data-astro-raw="">git commit</code> (Siga o <a href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a> e <a href="https://gitmoji.dev/">https://gitmoji.dev/</a> para fazer seu commit):</p><p><code data-astro-raw="">git commit -m "conventionalcommit(escopo): :GITMOJI: mensagem”</code></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conventionalcommit</td>
+<td>- seguir: <a href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a></td>
+</tr>
+<tr>
+<td>(escopo)</td>
+<td>- local alterado do projeto, hoje existe os seguintes escopos:  all client client-core validators lab entities blueberry-theme json-schema</td>
+</tr>
+<tr>
+<td>:GITMOJI:</td>
+<td>- utilizar: <a href="https://gitmoji.dev/">https://gitmoji.dev/</a>  O :GITMOJI: é opcional</td>
+</tr>
+<tr>
+<td>mensagem</td>
+<td>- mensagem que descreve a alteração (deve estar em inglês).</td>
+</tr>
+</tbody>
+</table><p><br>
+<strong>Exemplo:</strong></p><pre class="language-null"><code data-astro-raw="" class="language-null">git commit -m "feat(client) :speech_balloon: updating main title"</code></pre><h4 id="5--envie-as-alterações-para-o-github">5- <strong>Envie as alterações para o github</strong></h4><p>Envie suas alterações usando o comando&nbsp;<code data-astro-raw="">git push</code>:</p><p><strong>Exemplo:</strong></p><pre class="language-bash"><code data-astro-raw="" class="language-bash"><span class="token function">git</span> push  origin feat/nova-funcionalidade</code></pre><p>substituindo&nbsp;<code data-astro-raw="">&lt;feat/nova-funcionalidade&gt;</code> pelo nome do branch que você criou anteriormente.</p><h4 id="6--envie-suas-alterações-para-revisão">6- <strong>Envie suas alterações para revisão</strong></h4><p>Se você acessar seu repositório no github, verá um&nbsp;<code data-astro-raw="">Compare &amp; pull request</code>botão.&nbsp;Clique nesse botão. Ou clique em <code data-astro-raw="">Pull requests</code> depois em <code data-astro-raw="">New pull request</code></p><p>Selecione sua branch e abra uma solicitação de <code data-astro-raw="">Pull request</code> para o branch  <code data-astro-raw="">main</code>  do          <code data-astro-raw="">IQ-tech/firebolt</code></p><p><strong>Preencha o template do pull request</strong></p><pre class="language-markdown"><code data-astro-raw="" class="language-markdown"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>!</span> <span class="token attr-name">---</span> <span class="token attr-name">Provide</span> <span class="token attr-name">a</span> <span class="token attr-name">general</span> <span class="token attr-name">summary</span> <span class="token attr-name">of</span> <span class="token attr-name">your</span> <span class="token attr-name">changes</span> <span class="token attr-name">in</span> <span class="token attr-name">the</span> <span class="token attr-name">title</span> <span class="token attr-name">above</span> <span class="token attr-name">--</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token title important"><span class="token punctuation">####</span> Description</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>!</span> <span class="token attr-name">---</span> <span class="token attr-name">Describe</span> <span class="token attr-name">your</span> <span class="token attr-name">changes</span> <span class="token attr-name">in</span> <span class="token attr-name">detail</span> <span class="token attr-name">--</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Motivation and Context</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>!</span> <span class="token attr-name">---</span> <span class="token attr-name">Why</span> <span class="token attr-name">is</span> <span class="token attr-name">this</span> <span class="token attr-name">change</span> <span class="token attr-name">required?</span> <span class="token attr-name">What</span> <span class="token attr-name">problem</span> <span class="token attr-name">does</span> <span class="token attr-name">it</span> <span class="token attr-name">solve?</span> <span class="token attr-name">--</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Screenshots and links</span>
+
+<span class="token hr punctuation">---</span></code></pre><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;! --- Provide a general summary of your changes in the title above -&gt;</td>
+<td>No título preencha com um resumo geral de suas alterações.</td>
+</tr>
+<tr>
+<td>&lt;! --- Describe your changes in detail -&gt;</td>
+<td>substitua por uma descrição do que foi alterado no projeto.</td>
+</tr>
+<tr>
+<td>&lt;! --- Why is this change required? What problem does it solve? -&gt;</td>
+<td>substitua por uma descrição da necessidade da mudança e qual problema resolve.</td>
+</tr>
+<tr>
+<td>Screenshots and links</td>
+<td>Preencha se acha necessário imagens, gifs ou vídeos.</td>
+</tr>
+</tbody>
+</table><p><strong>Exemplo:</strong></p><pre class="language-markdown"><code data-astro-raw="" class="language-markdown">docs: updating README for example
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Description</span>
+
+entering an example text in the README
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">####</span> Motivation and Context</span>
+
+an example improvement
+
+<span class="token hr punctuation">---</span>
+
+<span class="token bold"><span class="token punctuation">**</span><span class="token content">Screenshots and links</span><span class="token punctuation">**</span></span>
+&lt;.img src="exemplo” /&gt;
+
+<span class="token hr punctuation">---</span></code></pre><p>Por fim clique em <code data-astro-raw="">Create pull request</code> .</p><h4 id="7--pull-request-aprovado">7- Pull request aprovado</h4><p>Quando o pull request for aprovado, a branch da feature pode ser mergeado na branch <code data-astro-raw="">main</code> , nesse momento um novo prerelease do firebolt contendo a alteração adicionada será lançada.</p><p>A feature será também adicionada ao proximo release oficial da biblioteca (quando um adm do repositório mergear a branch <code data-astro-raw="">main</code> à branch <code data-astro-raw="">latest</code>.</p>
+	</section>
+	<nav class="block sm:hidden astro-53BNYOZL">
+		
+
+<ul class="astro-ZVQSX46V">
+	
+	
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-ZVQSX46V">
+	<astro-root uid="1Gmxo9"><div class="theme-toggle"><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillrule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" cliprule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme"></label><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme"></label></div></astro-root>
+</div>
+
+
+
+	</nav>
+</article>
+
+
+
+			</div>
+			<aside id="grid-right" class="grid-sidebar astro-THSZY4RF" title="Table of Contents">
+				
+<nav class="sidebar-nav astro-2YE6FU27" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-2YE6FU27">
+		<astro-root uid="62LJe"><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-3"><a href="#o-que-é-uma-contribuição">O que é uma contribuição?</a></li><li class="header-link depth-3"><a href="#como-contribuir-no-firebolt">Como contribuir no Firebolt</a></li><li class="header-link depth-3"><a href="#reportando-bugs">Reportando bugs</a></li><li class="header-link depth-3"><a href="#indicando-melhorias">Indicando melhorias</a></li><li class="header-link depth-3"><a href="#sugerindo-funcionalidades">Sugerindo funcionalidades</a></li><li class="header-link depth-3"><a href="#discutindo-as-issues">Discutindo as issues</a></li><li class="header-link depth-3"><a href="#outras-formas-de-contribuir">Outras formas de contribuir</a></li><li class="header-link depth-3"><a href="#como-criar-pull-requests">Como criar pull requests</a></li></ul></astro-root>
+		
+
+<ul class="astro-ZVQSX46V">
+	
+	
+</ul>
+<div style="margin: 2rem 0; text-align: center;" class="astro-ZVQSX46V">
+	<astro-root uid="1Gmxo9"><div class="theme-toggle"><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fillrule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" cliprule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme"></label><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme"></label></div></astro-root>
+</div>
+
+
+
+	</div>
+</nav>
+
+
+
+			</aside>
+		</main>
+	</body></html>
