@@ -36,7 +36,7 @@
         {
           "header": false,
           "text": "Esquema Json",
-          "page": "schema"
+          "page": "json-schema"
         },
         {
           "header": true,
@@ -91,7 +91,7 @@
         },
         {
           "header": false,
-          "text": "Json Schema",
+          "text": "json-schema",
           "page": "schema"
         },
         {

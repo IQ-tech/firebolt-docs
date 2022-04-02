@@ -77,19 +77,6 @@ For more SEO related properties, look at `src/components/HeadSEO.astro`
 
 The sidebar navigation is controlled by the `SIDEBAR` variable in your `src/config.ts` file. You can customize the sidebar by modifying this object. A default, starter navigation has already been created for you.
 
-```ts
-export const SIDEBAR = {
-  en: [
-    { text: 'Section Header', header: true, },
-    { text: 'Introduction', link: 'en/introduction' },
-    { text: 'Page 2', link: 'en/page-2' },
-    { text: 'Page 3', link: 'en/page-3' },
-
-    { text: 'Another Section', header: true },
-    { text: 'Page 4', link: 'en/page-4' },
-  ],
-};
-```
 
 Note the top-level `en` key: This is needed for multi-language support. You can change it to whatever language you'd like, or add new languages as you go. More details on this below.
 

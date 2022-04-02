@@ -1,0 +1,14 @@
+---
+import { Markdown } from 'astro/components';
+import MainLayout from "../../layouts/MainLayout.astro"
+import parser from "json-schema-to-markdown"
+import fireboltSchema from "@iq-firebolt/json-schema/form-schema.json"
+const md = parser(fireboltSchema)
+
+---
+<MainLayout>
+  <Markdown content={md} />
+  <Markdown>
+    [sample](./json-sample)
+  </Markdown>
+</MainLayout>

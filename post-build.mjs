@@ -2,7 +2,9 @@ import fs from 'fs'
 import path from 'path'
 import astroConfig from './astro.config.mjs'
 
-
+/**
+ * used for github pages limitation
+ */
 const PUBLIC_DIR = astroConfig.dist || "dist"
 const argvs = process.argv.slice(2);
 

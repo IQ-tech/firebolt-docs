@@ -7,12 +7,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "astro-build": "astro build",
-    "build": "yarn generate-json-docs && astro build && yarn post-build",
+    "build": "astro build && yarn post-build",
     "preview": "astro preview",
     "cms": "npx netlify-cms-proxy-server",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist/firebolt-docs",
-    "generate-json-docs": "node scripts/generate-json-docs.js "
+    "deploy": "gh-pages -d dist/firebolt-docs"
   },
   "dependencies": {
     "@algolia/client-search": "4.13.0",

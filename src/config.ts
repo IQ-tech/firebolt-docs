@@ -16,36 +16,3 @@ export const KNOWN_LANGUAGES = {
 	English: 'en',
 	'Português (BR)': 'pt-BR'
 };
-
-export const SIDEBAR = {
-	en: [
-		{ text: 'Documentation', header: true },
-		{ text: 'Introduction', link: 'en/introduction' },
-		{ text: 'Getting Started', link: 'en/page-2' },
-		{ text: 'Tutorial', link: 'en/page-3' },
-
-		{ text: 'Guides', header: true },
-		{ text: 'JSON Schema', link: 'en/page-4' },
-
-		{ text: 'Examples', header: true },
-		{ text: 'Basics', link: 'en/page-4' },
-
-		{ text: 'API Reference', header: true },
-		
-	],
-	'pt-BR': [
-		{ text: 'Documentation', header: true },
-		{ text: 'Introduction', link: 'pt-BR/introduction' },
-		{ text: 'Getting Started', link: 'pt-BR/page-2' },
-		{ text: 'Tutorial', link: 'pt-BR/page-3' },
-
-		{ text: 'Guides', header: true },
-		{ text: 'JSON Schema', link: 'pt-BR/page-4' },
-
-		{ text: 'Examples', header: true },
-		{ text: 'Basics', link: 'pt-BR/page-4' },
-
-		{ text: 'API Reference', header: true },
-		
-	],
-};
