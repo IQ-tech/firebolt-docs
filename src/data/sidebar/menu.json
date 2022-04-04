@@ -55,6 +55,11 @@
           "header": false,
           "text": "Exemplo 1",
           "page": "example-1"
+        },
+        {
+          "header": false,
+          "text": "Temas",
+          "page": "themes"
         }
       ]
     },
@@ -111,6 +116,11 @@
           "header": false,
           "text": "Example 1",
           "page": "example-1"
+        },
+        {
+          "header": false,
+          "text": "Themes",
+          "page": "themes"
         }
       ]
     }
