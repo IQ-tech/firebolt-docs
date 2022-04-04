@@ -2,8 +2,8 @@
 import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from '../../languages.ts';
 import * as CONFIG from '../../config.ts';
 import SkipToContent from './SkipToContent.astro';
-import SidebarToggle from './SidebarToggle.tsx';
-import LanguageSelect from './LanguageSelect.tsx';
+import SidebarToggle from '../react/SidebarToggle';
+import LanguageSelect from '../react/LanguageSelect';
 
 const { currentPage } = Astro.props;
 const lang = currentPage && getLanguageFromURL(currentPage);

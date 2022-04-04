@@ -1,25 +1,11 @@
-import "./LanguageSelect.css";
-import { KNOWN_LANGUAGES, langPathRegex } from "../../languages";
+import { KNOWN_LANGUAGES } from "../../../languages";
+import useLanguageSelect from "./hook";
 
-const LanguageSelect: React.FC<{ lang: string }> = ({ lang }) => {
-  function handleChangeLanguage(url, language){
-    const isDev = url.host === "localhost:3000";
-    const actualDest = url.pathname.replace(langPathRegex, "/");
+import "./style.css"
 
-    if (isDev) {
-      url.pathname =
-        actualDest === "/"
-          ? `/${language}introduction`
-          : `/${language}${actualDest}`;
-    } else {
-      url.pathname =
-        actualDest === "/firebolt-docs"
-          ? `/firebolt-docs/${language}introduction`
-          : `/firebolt-docs/${language}/${
-              actualDest.split("/firebolt-docs/")[1]
-            }`;
-    }
-  };
+const LanguageSelect = ({ lang }) => {
+  const { handleChangeLanguage } = useLanguageSelect();
+
   return (
     <div className="language-select-wrapper">
       <svg
