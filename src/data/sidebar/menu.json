@@ -36,7 +36,7 @@
         {
           "header": false,
           "text": "Esquema Json",
-          "page": "schema"
+          "page": "json-schema"
         },
         {
           "header": true,
@@ -55,6 +55,11 @@
           "header": false,
           "text": "Exemplo 1",
           "page": "example-1"
+        },
+        {
+          "header": false,
+          "text": "Temas",
+          "page": "themes"
         }
       ]
     },
@@ -91,7 +96,7 @@
         },
         {
           "header": false,
-          "text": "Json Schema",
+          "text": "json-schema",
           "page": "schema"
         },
         {
@@ -111,6 +116,11 @@
           "header": false,
           "text": "Example 1",
           "page": "example-1"
+        },
+        {
+          "header": false,
+          "text": "Themes",
+          "page": "themes"
         }
       ]
     }

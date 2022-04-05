@@ -1,29 +1,13 @@
-import type { FunctionalComponent } from "preact";
-import { h } from "preact";
-import "./LanguageSelect.css";
-import { KNOWN_LANGUAGES, langPathRegex } from "../../languages";
+import { KNOWN_LANGUAGES } from "../../../languages";
+import useLanguageSelect from "./hook";
 
-const LanguageSelect: FunctionalComponent<{ lang: string }> = ({ lang }) => {
-  const handleChangeLanguage = (url, language) => {
-    const isDev = url.host === "localhost:3000";
-    const actualDest = url.pathname.replace(langPathRegex, "/");
+import "./style.css"
 
-    if (isDev) {
-      url.pathname =
-        actualDest === "/"
-          ? `/${language}introduction`
-          : `/${language}${actualDest}`;
-    } else {
-      url.pathname =
-        actualDest === "/firebolt-docs"
-          ? `/firebolt-docs/${language}introduction`
-          : `/firebolt-docs/${language}/${
-              actualDest.split("/firebolt-docs/")[1]
-            }`;
-    }
-  };
+const LanguageSelect = ({ lang }) => {
+  const { handleChangeLanguage } = useLanguageSelect();
+
   return (
-    <div class="language-select-wrapper">
+    <div className="language-select-wrapper">
       <svg
         aria-hidden="true"
         focusable="false"
@@ -43,14 +27,14 @@ const LanguageSelect: FunctionalComponent<{ lang: string }> = ({ lang }) => {
         />
       </svg>
       <select
-        class="language-select"
+        className="language-select"
         value={lang}
         onChange={(e) => handleChangeLanguage(window.location, e.target.value)}
       >
         {Object.keys(KNOWN_LANGUAGES).map((key) => {
           return (
-            <option value={KNOWN_LANGUAGES[key]}>
-              <span>{key}</span>
+            <option key={`lang-${key}`} value={KNOWN_LANGUAGES[key]}>
+              {key}
             </option>
           );
         })}
