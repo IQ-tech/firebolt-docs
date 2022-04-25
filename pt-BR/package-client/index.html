@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR" class="initial astro-AWDJ37HD">
+	<head>
+		<!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/svg+xml" href="https://iq-tech.github.io/firebolt-docs/favicon.svg">
+<link rel="alternate icon" type="image/x-icon" href="https://iq-tech.github.io/firebolt-docs/favicon.ico">
+
+<link rel="sitemap" href="https://iq-tech.github.io/firebolt-docs/sitemap.xml">
+
+<!-- Global CSS -->
+
+
+<!-- Preload Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Scrollable a11y code helper -->
+<script type="module" src="https://iq-tech.github.io/firebolt-docs/make-scrollable-code-focusable.js"></script>
+
+<!-- This is intentionally inlined to avoid FOUC -->
+<script>
+	const root = document.documentElement;
+	const theme = localStorage.getItem('theme');
+	if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		root.classList.add('theme-dark');
+	} else {
+		root.classList.remove('theme-dark');
+	}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEL60V1WM9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEL60V1WM9');
+</script> -->
+
+		<!-- Page Metadata --><link rel="canonical" href="http://localhost:3000/pt-BR/package-client/">
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content="Client 🚀 Firebolt">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:3000/pt-BR/package-client/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
+<meta property="og:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+<meta name="description" property="og:description" content="Utilização do pacote client">
+<meta property="og:site_name" content="Firebolt">
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="astrodotbuild">
+<meta name="twitter:title" content="Client 🚀 Firebolt">
+<meta name="twitter:description" content="Utilização do pacote client">
+<meta name="twitter:image" content="https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true">
+<meta name="twitter:image:alt" content="astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground">
+
+<!--
+  TODO: Add json+ld data, maybe https://schema.org/APIReference makes sense?
+  Docs: https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+  https://www.npmjs.com/package/schema-dts seems like a great resource for implementing this.
+  Even better, there's a React component that integrates with `schema-dts`: https://github.com/google/react-schemaorg
+-->
+
+		<title>Client 🧹 Firebolt</title>
+		
+	<link rel="stylesheet" href="https://iq-tech.github.io/firebolt-docs/assets/asset.7cac94e3.css"></link><style astro-style="true">astro-root, astro-fragment { display: contents; }</style><script type="module" data-astro-component-hydration astro-script="/pt-BR/package-client/script-0">import setup from '../../entry.3dd0b2fa.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z4Aldl", {name:"SidebarToggle",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../entry.30f99e1e.js"), import("../../entry.7683a4bb.js")]);
+  return (el, children) => hydrate(el)(Component, {}, children);
+
+});
+</script>
+<script type="module" data-astro-component-hydration astro-script="/pt-BR/package-client/script-1">import setup from '../../entry.3dd0b2fa.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("ZaDFzG", {name:"LanguageSelect",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../entry.379d88f3.js"), import("../../entry.7683a4bb.js")]);
+  return (el, children) => hydrate(el)(Component, {"lang":"pt-BR"}, children);
+
+});
+</script>
+<script type="module" data-astro-component-hydration astro-script="/pt-BR/package-client/script-2">import setup from '../../entry.e67581d4.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z1gg5VA", {name:"TableOfContents",value: "(min-width: 50em)"}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../entry.b39e7af1.js"), import("../../entry.7683a4bb.js")]);
+  return (el, children) => hydrate(el)(Component, {"headers":[{"depth":2,"slug":"firebolt-client","text":"Firebolt Client"},{"depth":3,"slug":"instalação","text":"Instalação"},{"depth":3,"slug":"configuração","text":"Configuração"},{"depth":3,"slug":"componentes","text":"Componentes"},{"depth":3,"slug":"wizard","text":"Wizard"},{"depth":3,"slug":"wizardstep","text":"Wizard.Step"},{"depth":3,"slug":"template-de-passo","text":"Template de passo"},{"depth":3,"slug":"fireboltform","text":"FireboltForm"},{"depth":3,"slug":"fireboltforminsert","text":"FireboltForm.Insert"},{"depth":3,"slug":"stepform","text":"StepForm"},{"depth":3,"slug":"stepforminsert","text":"StepForm.Insert"}]}, children);
+
+});
+</script>
+<script type="module" data-astro-component-hydration astro-script="/pt-BR/package-client/script-3">import setup from '../../entry.9125fc96.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("xvEXW", {name:"ThemeToggleButton",value: true}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../entry.8955bc9c.js"), import("../../entry.7683a4bb.js")]);
+  return (el, children) => hydrate(el)(Component, {}, children);
+
+});
+</script>
+<script type="module" data-astro-component-hydration astro-script="/pt-BR/package-client/script-4">import setup from '../../entry.e67581d4.js';
+import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+setup("Z1gg5VA", {name:"TableOfContents",value: "(max-width: 50em)"}, async () => {
+  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("../../entry.b39e7af1.js"), import("../../entry.7683a4bb.js")]);
+  return (el, children) => hydrate(el)(Component, {"headers":[{"depth":2,"slug":"firebolt-client","text":"Firebolt Client"},{"depth":3,"slug":"instalação","text":"Instalação"},{"depth":3,"slug":"configuração","text":"Configuração"},{"depth":3,"slug":"componentes","text":"Componentes"},{"depth":3,"slug":"wizard","text":"Wizard"},{"depth":3,"slug":"wizardstep","text":"Wizard.Step"},{"depth":3,"slug":"template-de-passo","text":"Template de passo"},{"depth":3,"slug":"fireboltform","text":"FireboltForm"},{"depth":3,"slug":"fireboltforminsert","text":"FireboltForm.Insert"},{"depth":3,"slug":"stepform","text":"StepForm"},{"depth":3,"slug":"stepforminsert","text":"StepForm.Insert"}]}, children);
+
+});
+</script>
+</head>
+
+	<body>
+	<header class="astro-ZA67LW6Q">
+	<a href="#article" class="sr-only focus:not-sr-only skiplink astro-CXECKFLK"><span class="astro-CXECKFLK">Skip to Content</span></a>
+
+
+
+	<nav class="nav-wrapper astro-ZA67LW6Q" title="Top Navigation">
+		<div class="menu-toggle astro-ZA67LW6Q">
+			<astro-root uid="Z4Aldl"><button type="button" aria-pressed="false" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><span class="sr-only">Toggle sidebar</span></button></astro-root>
+		</div>
+		<div class="logo flex astro-ZA67LW6Q">
+			<img src="https://iq-tech.github.io/firebolt-docs/logo.png" alt="Firebolt Logo" class="astro-ZA67LW6Q">
+		</div>
+		<div style="flex-grow: 1;" class="astro-ZA67LW6Q"></div>
+		<astro-root uid="ZaDFzG"><div class="language-select-wrapper"><svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.6 77.3" height="1.2em" width="1.2em"><path fill="currentColor" d="M61,24.6h7.9l18.7,51.6h-7.7l-5.4-15.5H54.3l-5.6,15.5h-7.2L61,24.6z M72.6,55l-8-22.8L56.3,55H72.6z"></path><path fill="currentColor" d="M53.6,60.6c-10-4-16-9-22-14c0,0,1.3,1.3,0,0c-6,5-20,13-20,13l-4-6c8-5,10-6,19-13c-2.1-1.9-12-13-13-19h8          c4,9,10,14,10,14c10-8,10-19,10-19h8c0,0-1,13-12,24l0,0c5,5,10,9,19,13L53.6,60.6z M1.6,16.6h56v-8h-23v-7h-9v7h-24V16.6z"></path></svg><select class="language-select"><option value="en">English</option><option selected="" value="pt-BR">Português (BR)</option></select></div></astro-root>
+	</nav>
+</header>
+
+
+
+		<main class="layout astro-AWDJ37HD">
+			<aside id="grid-left" class="grid-sidebar astro-AWDJ37HD" title="Site Navigation">
+				<nav aria-labelledby="grid-left" class="astro-AEMBVVFW">
+	<ul class="nav-groups astro-AEMBVVFW">
+		<li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Documentação</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/introduction" aria-current="false" class="astro-AEMBVVFW">
+									Introdução
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/installation" aria-current="false" class="astro-AEMBVVFW">
+									Instalação
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/tutorial" aria-current="false" class="astro-AEMBVVFW">
+									Tutorial
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/contributing" aria-current="false" class="astro-AEMBVVFW">
+									Contribuição
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Guias</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/json-schema" aria-current="false" class="astro-AEMBVVFW">
+									Esquema Json
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Pacotes</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/package-client" aria-current="page" class="astro-AEMBVVFW">
+									Client
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Utilidades</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/autofill" aria-current="false" class="astro-AEMBVVFW">
+									Autofill
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li><li class="astro-AEMBVVFW">
+				<div class="nav-group astro-AEMBVVFW">
+					<h2 class="nav-group-title astro-AEMBVVFW">Exemplos</h2>
+					<ul class="astro-AEMBVVFW">
+						<li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/example-1" aria-current="false" class="astro-AEMBVVFW">
+									Exemplo 1
+								</a>
+							</li><li class="nav-link astro-AEMBVVFW">
+								<a href="https://iq-tech.github.io/firebolt-docs/pt-BR/themes" aria-current="false" class="astro-AEMBVVFW">
+									Temas
+								</a>
+							</li>
+					</ul>
+				</div>
+			</li>
+	</ul>
+</nav>
+
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		var target = document.querySelector('[aria-current="page"]');
+		if (target && target.offsetTop > window.innerHeight - 100) {
+			document.querySelector('.nav-groups').scrollTop = target.offsetTop;
+		}
+	});
+</script>
+
+
+
+			</aside>
+				<div id="grid-main" class="astro-AWDJ37HD">
+				<article id="article" class="content astro-ACGIPC2P">
+	<section class="main-section astro-ACGIPC2P">
+		<h1 class="content-title astro-ACGIPC2P" id="overview">Client</h1>
+		<nav class="block sm:hidden astro-ACGIPC2P">
+			<astro-root uid="Z1gg5VA"><div><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-2"><a href="#firebolt-client">Firebolt Client</a></li><li class="header-link depth-3"><a href="#instalação">Instalação</a></li><li class="header-link depth-3"><a href="#configuração">Configuração</a></li><li class="header-link depth-3"><a href="#componentes">Componentes</a></li><li class="header-link depth-3"><a href="#wizard">Wizard</a></li><li class="header-link depth-3"><a href="#wizardstep">Wizard.Step</a></li><li class="header-link depth-3"><a href="#template-de-passo">Template de passo</a></li><li class="header-link depth-3"><a href="#fireboltform">FireboltForm</a></li><li class="header-link depth-3"><a href="#fireboltforminsert">FireboltForm.Insert</a></li><li class="header-link depth-3"><a href="#stepform">StepForm</a></li><li class="header-link depth-3"><a href="#stepforminsert">StepForm.Insert</a></li></ul></div></astro-root>
+		</nav>
+		<h2 id="firebolt-client">Firebolt Client</h2><p>Uma biblioteca react que faz parte da stack Firebolt e tem como objetivos:</p><ul>
+<li>Integrar-se automaticamente com o serviço do Firebolt onde os dados dos passos dos formulários são processados;</li>
+<li>Fornecer uma série de componentes que permitem a criação desses formulários em aplicações front-end de forma modular.</li>
+</ul><h3 id="instalação">Instalação</h3><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># npm</span></span>
+<span class="line"><span style="color: #C9D1D9">npm install @iq-firebolt/client --save</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E"># yarn</span></span>
+<span class="line"><span style="color: #C9D1D9">yarn add @iq-firebolt/client</span></span></code></pre><h3 id="configuração">Configuração</h3><p>Para começarmos a usar o Firebolt client, precisamos configurar o <code>Provider</code>, ele é responsável por gerenciar o estado atual do formulário:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { createFireboltProvider } </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;@iq-firebolt/client&quot;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">withFirebolt</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">createFireboltProvider</span><span style="color: #C9D1D9">({</span></span>
+<span class="line"><span style="color: #C9D1D9">  formAccess: {</span></span>
+<span class="line"><span style="color: #C9D1D9">    root: </span><span style="color: #A5D6FF">&quot;https://firebolt-api-endpoint&quot;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">    formName: </span><span style="color: #A5D6FF">&quot;sample&quot;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  },</span></span>
+<span class="line"><span style="color: #C9D1D9">  withHistory: </span><span style="color: #79C0FF">true</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  stepQueryParam: </span><span style="color: #A5D6FF">&quot;step&quot;</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">  debug: </span><span style="color: #79C0FF">true</span><span style="color: #C9D1D9">,</span></span>
+<span class="line"><span style="color: #C9D1D9">});</span></span></code></pre><p><strong>Props <code>Provider</code></strong></p><table>
+<thead>
+<tr>
+<th>Propriedade</th>
+<th><div style="width: 120px;">Valor Padrão</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>formAccess</td>
+<td><code>null</code></td>
+<td>Acesso da api do Firebolt, formName é o form que queremos consumir.</td>
+</tr>
+<tr>
+<td>withHistory</td>
+<td><code>false</code></td>
+<td>Com essa propriedade, cada transição de passo resultará em um push no history do browser do usuário, isso também permite o uso das setas do browser para navegação no formulário.</td>
+</tr>
+<tr>
+<td>stepQueryParam</td>
+<td><code>"step"</code></td>
+<td>Durante a navegação do formulário a url da página conterá um parâmetro que indica o slug do passo atual, exemplo <code>?step=personal_data</code>.</td>
+</tr>
+<tr>
+<td>debug</td>
+<td><code>false</code></td>
+<td>Nos permite usar o parâmetro <code>debug-step</code> na url da página, com isso, podemos debugar um passo especifico do formulário, exemplo: <code>?debug-step=personal_data</code>.</td>
+</tr>
+</tbody>
+</table><p>Para usarmos o <code>Provider</code>, devemos encapsular a aplicação ou o componente da página que queremos renderizar o formulário:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">App</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> () </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> &lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt; my app &lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;;</span></span>
+<span class="line"><span style="color: #C9D1D9">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">export</span><span style="color: #FFA657"> </span><span style="color: #FF7B72">default</span><span style="color: #FFA657"> </span><span style="color: #D2A8FF">withFirebolt</span><span style="color: #FFA657">(</span><span style="color: #C9D1D9">App</span><span style="color: #FFA657">)</span><span style="color: #C9D1D9">;</span></span></code></pre><h3 id="componentes">Componentes</h3><h3 id="wizard"><code>Wizard</code></h3><p>O <code>Wizard</code> é semelhante ao <code>Switch</code> do <code>react-router</code>, ele define qual componente renderizar a cada passo do formulário e também é possível definir um componente padrão para ser utilizado. Além disso, possui características importantes como:</p><ul>
+<li>Rodar callbacks em situações especificas do formulário, por exemplo, na mudança de passo, caso haja um erro de conexão ou quando o formulário for finalizado;</li>
+<li>Definir um componente de fallback, ou seja, renderizar um componente durante a transição de passos, por exemplo um loader.</li>
+</ul><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">...</span></span>
+<span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { Wizard, createFireboltProvider} </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;@iq-firebolt/client&quot;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">withFirebolt</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">createFireboltProvider</span><span style="color: #C9D1D9">({</span><span style="color: #FF7B72">...</span><span style="color: #C9D1D9">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">App</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> () </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">		&lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;My form&lt;/</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;</span><span style="color: #7EE787">Wizard</span></span>
+<span class="line"><span style="color: #C9D1D9">		    </span><span style="color: #79C0FF">fallback</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{&lt;</span><span style="color: #7EE787">MyLoader</span><span style="color: #C9D1D9"> /&gt;}</span></span>
+<span class="line"><span style="color: #C9D1D9">		    </span><span style="color: #79C0FF">onFinishForm</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{(</span><span style="color: #FFA657">payload</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {}}</span></span>
+<span class="line"><span style="color: #C9D1D9">		    </span><span style="color: #79C0FF">onConnectionError</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{(</span><span style="color: #FFA657">err</span><span style="color: #C9D1D9">) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {}}</span></span>
+<span class="line"><span style="color: #C9D1D9">		    </span><span style="color: #79C0FF">onBeforeChangeStep</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{(</span><span style="color: #FFA657">proceed</span><span style="color: #C9D1D9">, {</span><span style="color: #FFA657">leavingStep</span><span style="color: #C9D1D9">, </span><span style="color: #FFA657">enteringStep</span><span style="color: #C9D1D9">}) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {})</span></span>
+<span class="line"><span style="color: #C9D1D9">		    onChangeStep</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{({sentStep, currentStep}) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {}}</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;/</span><span style="color: #7EE787">Wizard</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		&lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">	)</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">export</span><span style="color: #FFA657"> </span><span style="color: #FF7B72">default</span><span style="color: #FFA657"> </span><span style="color: #D2A8FF">withFirebolt</span><span style="color: #FFA657">(</span><span style="color: #C9D1D9">App</span><span style="color: #FFA657">)</span></span>
+<span class="line"></span></code></pre><p><strong>Props <code>Wizard</code></strong></p><table>
+<thead>
+<tr>
+<th><div style="width: 150px;">Propriedade</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fallback</code></td>
+<td>Recebe um componente ou marcação que deve ser renderizada durante a requisição de transição de passos .</td>
+</tr>
+<tr>
+<td><code>onFinishForm</code></td>
+<td>Callback que roda ao avançar o último passo, a função recebe um payload como argumento (ultima resposta da Firebolt api).</td>
+</tr>
+<tr>
+<td><code>onConnectionError</code></td>
+<td>Esse callback deve rodar quando ocorre algum problema de conexão entre o Firebolt client e a API.</td>
+</tr>
+<tr>
+<td><code>onBeforeChangeStep</code></td>
+<td>Quando o client recebe os dados de um novo passo da api, a transição não ocorre instantaneamente, esse callback pode ser utilizado para rodar algo antes que a transição ocorra, ou seja: Client requisita novo passo -> api retorna novo passo -> onBeforeChangeStep -> mudança de passo no estado atual do client, isso permite por exemplo redirecionar o usuário para algum site externo antes de renderizar o próximo passo do formulário.</td>
+</tr>
+<tr>
+<td><code>onChangeStep</code></td>
+<td>Podemos usar esse callback para rodar algo após a transição de um passo para outro.</td>
+</tr>
+</tbody>
+</table><blockquote>
+<p>O <code>Wizard</code> renderiza/monta apenas um componente por vez, ou seja, se o formulário avançar para o próximo passo, o componente do template do passo atual será desmontado e o <code>fallback</code> ocupará o seu lugar.</p>
+</blockquote><h3 id="wizardstep"><code>Wizard.Step</code></h3><p>O <code>Wizard.Step</code> funciona de forma similar ao <code>Route</code> do React router, ele fica responsável por atribuir a renderização de um componente especifico (template de passo/ step template) para um passo especifico do formulário. Com ele podemos definir utilizar um template padrão para os passos utilizando o pattern <code>*</code>:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">...</span></span>
+<span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { Wizard, createFireboltProvider} </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;@iq-firebolt/client&quot;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #8B949E">// template components</span></span>
+<span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> DefaultTemplate </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;components/StepTemplates/Default&quot;</span></span>
+<span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> SummaryTemplate </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;components/StepTemplates/Summary&quot;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">withFirebolt</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">createFireboltProvider</span><span style="color: #C9D1D9">({</span><span style="color: #FF7B72">...</span><span style="color: #C9D1D9">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">App</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> () </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">		&lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;My form&lt;/</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;</span><span style="color: #7EE787">Wizard</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">fallback</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{&lt;</span><span style="color: #7EE787">MyLoader</span><span style="color: #C9D1D9"> /&gt;} &gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">			{</span><span style="color: #8B949E">/* Default step template: */</span><span style="color: #C9D1D9">}</span></span>
+<span class="line"><span style="color: #C9D1D9">			&lt;</span><span style="color: #7EE787">Wizard.Step</span><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">match</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;*&quot;</span><span style="color: #C9D1D9">  </span><span style="color: #79C0FF">component</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{DefaultTemplate}  /&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">			{</span><span style="color: #8B949E">/* Custom template */</span><span style="color: #C9D1D9">}</span></span>
+<span class="line"><span style="color: #C9D1D9">			&lt;</span><span style="color: #7EE787">Wizard.Step</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">match</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{{slug:</span><span style="color: #A5D6FF">&quot;summary_step&quot;</span><span style="color: #C9D1D9">}} </span><span style="color: #79C0FF">component</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{SummaryTemplate} /&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;/</span><span style="color: #7EE787">Wizard</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		&lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">	)</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">export</span><span style="color: #FFA657"> </span><span style="color: #FF7B72">default</span><span style="color: #FFA657"> </span><span style="color: #D2A8FF">withFirebolt</span><span style="color: #FFA657">(</span><span style="color: #C9D1D9">App</span><span style="color: #FFA657">)</span></span>
+<span class="line"></span></code></pre><p><strong>Props <code>Wizard.Step</code></strong></p><table>
+<thead>
+<tr>
+<th><div style="width: 150px;">Propriedade</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>match</code></td>
+<td>Utilizado como identificador. O pattern <code>*</code> pode ser utilizado para definir um template padrão. Ou podemos definir o slug do passo passando um objeto tipo: <code>{slug: "step_slug"}</code>.</td>
+</tr>
+<tr>
+<td><code>component</code></td>
+<td>Componente que deve ser utilizado como template de passo.</td>
+</tr>
+</tbody>
+</table><blockquote>
+<p>Toda prop passada para o Wizard.Step é repassada para o componente que ele deve renderizar.</p>
+</blockquote><h3 id="template-de-passo">Template de passo</h3><p>Todo componente que for utilizado como template de passo recebe uma prop chamada <code>fireboltStep</code>, ela contem algumas informações sobre o passo atual e alguns métodos para a navegação no formulário. Esses valores também podem ser obtidos utilizando o hook <code>useFirebolt</code>.</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">DefaultStepTemplate</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> ({ </span><span style="color: #FFA657">fireboltStep</span><span style="color: #C9D1D9"> }) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">function</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">goToNextStep</span><span style="color: #C9D1D9">() {</span></span>
+<span class="line"><span style="color: #C9D1D9">    fireboltStep.</span><span style="color: #D2A8FF">goNextStep</span><span style="color: #C9D1D9">({ cpf: </span><span style="color: #A5D6FF">&quot;030.136.450-83&quot;</span><span style="color: #C9D1D9"> });</span></span>
+<span class="line"><span style="color: #C9D1D9">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">    &lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">      &lt;</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">className</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;default-step&quot;</span><span style="color: #C9D1D9">&gt;Step title&lt;/</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">      &lt;</span><span style="color: #7EE787">button</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">onClick</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{goToNextStep}&gt;Próximo&lt;/</span><span style="color: #7EE787">button</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">    &lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">  );</span></span>
+<span class="line"><span style="color: #C9D1D9">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">export</span><span style="color: #FFA657"> </span><span style="color: #FF7B72">default</span><span style="color: #FFA657"> </span><span style="color: #C9D1D9">DefaultStepTemplate;</span></span></code></pre><p><strong>Conteúdo da prop <code>fireboltStep</code></strong></p><table>
+<thead>
+<tr>
+<th><div style="width: 150px;">Propriedade</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>capturedData</code></td>
+<td>Objeto que contém toda informação preenchida pelo usuário nos passos anteriores.</td>
+</tr>
+<tr>
+<td><code>clearSession</code></td>
+<td>Função para limpar a sessão do formulário e cancelar a progressão da experiência.</td>
+</tr>
+<tr>
+<td><code>fields</code></td>
+<td>Sessão do JSON schema que descreve os campos necessários para o passo atual do formulário.</td>
+</tr>
+<tr>
+<td><code>formFlowMetadata</code></td>
+<td>Dados gerais sobre o formulário (total de passos, nome e slug dos passos e etc).</td>
+</tr>
+<tr>
+<td><code>friendlyName</code></td>
+<td>Nome amigável do passo atual. Utilizado para UI (Definido no JSON schema).</td>
+</tr>
+<tr>
+<td><code>goNextStep</code></td>
+<td>Função que dispara a transição para o próximo passo. Recebe como argumento um payload, ou seja um mapa chave-valor do slug do campo e o valor que deve ser enviado para a firebolt api.</td>
+</tr>
+<tr>
+<td><code>goPreviousStep</code></td>
+<td>Função que dispara a transição para o passo anterior do formulário.</td>
+</tr>
+<tr>
+<td><code>position</code></td>
+<td>Numero da posição do passo atual em relação ao total de passos, pode ser usado para renderizar um contador na tela como “passo 2/4” (Inicia em 1).</td>
+</tr>
+<tr>
+<td><code>remoteErrors</code></td>
+<td>Erros validação de campo da api.</td>
+</tr>
+<tr>
+<td><code>slug</code></td>
+<td>Slug identificador do passo atual, o mesmo utilizado no <code>Wizard.Step</code>.</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>Tipo do passo atual (<code>form</code> ou <code>custom</code>).</td>
+</tr>
+<tr>
+<td><code>webhookResult</code></td>
+<td>Resultado da chamada de webhook que pode ter ocorrido entre o passo anterior e o passo atual, ele pode conter qualquer dado que tenha vindo de uma api terceira.</td>
+</tr>
+</tbody>
+</table><h3 id="fireboltform"><code>FireboltForm</code></h3><p>A função do <code>FireboltForm</code> é transformar a parte do <code>JSON Schema</code> que descreve os campos necessários, em um formulário real.
+Ele mapeia e renderiza os campos, combinando eles com as inserções de conteúdo (Se necessário). exemplo:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { FireboltForm } </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;@iq-firebolt/client&quot;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">DefaultStepTemplate</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> ({ </span><span style="color: #FFA657">fireboltStep</span><span style="color: #C9D1D9"> }) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">    &lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">      &lt;</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">className</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;default-step&quot;</span><span style="color: #C9D1D9">&gt;Step title&lt;/</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">      &lt;</span><span style="color: #7EE787">FireboltForm</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">onSubmit</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep.goNextStep}</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">schema</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep.fields}</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">onGoBack</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep.goPreviousStep}</span></span>
+<span class="line"><span style="color: #C9D1D9">      /&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">    &lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">  );</span></span>
+<span class="line"><span style="color: #C9D1D9">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">export</span><span style="color: #FFA657"> </span><span style="color: #FF7B72">default</span><span style="color: #FFA657"> </span><span style="color: #C9D1D9">DefaultStepTemplate;</span></span></code></pre><p><strong>Prop <code>FireboltForm</code></strong></p><table>
+<thead>
+<tr>
+<th><div style="width: 150px;">Propriedade</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>autofill</code></td>
+<td>Recebe um objeto chave-valor (slug do campo e valor) que automaticamente preenche o payload do formulário, ou seja, se o objeto <code>{"name": "Marty Mcfly"}</code> for passado para essa prop, o campo de nome deve ser automaticamente preenchido no formulário.</td>
+</tr>
+<tr>
+<td><code>className</code></td>
+<td>Adiciona uma classe customizada ao elemento <code>form</code>.</td>
+</tr>
+<tr>
+<td><code>customActionsChild</code></td>
+<td>Permite passar um componente para lidar com o envio ou regressão do formulário. Geralmente são passados botões customizados.</td>
+</tr>
+<tr>
+<td><code>onChange</code></td>
+<td>Esse callback roda sempre que ocorre alguma alteração nos dados do formulário, ele passa o payload atualizado do formulário como argumento do callback.</td>
+</tr>
+<tr>
+<td><code>onFocusField</code></td>
+<td>Recebe uma função de callback que retorna informações a respeito do campo em foco (slug do campo e valor).</td>
+</tr>
+<tr>
+<td><code>onGoBack</code></td>
+<td>Função que deve rodar ao clicar no botão de voltar do passo.</td>
+</tr>
+<tr>
+<td><code>onSubmit</code></td>
+<td>Função que deve rodar ao clicar no botão de submeter o passo.</td>
+</tr>
+<tr>
+<td><code>previousBtnText</code></td>
+<td>Texto que deve ser renderizado no botão padrão de voltar.</td>
+</tr>
+<tr>
+<td><code>remoteErrors</code></td>
+<td>Erros de validação de campo definidos por prop, pode ser usado para forçar um erro ou passa erros que vieram da firebolt api.</td>
+</tr>
+<tr>
+<td><code>schema</code></td>
+<td>Parte do <code>JSON Schema</code> responsável por descrever os campos necessários para o passo.</td>
+</tr>
+<tr>
+<td><code>submitBtnText</code></td>
+<td>Texto que deve ser renderizado no botão padrão de submeter.</td>
+</tr>
+<tr>
+<td><code>theme</code></td>
+<td>Tema customizado para utilizar componentes diferentes para a renderização de campos. Exemplos de temas são o <code>firebolt-blueberry</code> e o padrão <code>material</code>. Um tema pode também implementar campos customizados.</td>
+</tr>
+</tbody>
+</table><h3 id="fireboltforminsert"><code>FireboltForm.Insert</code></h3><p>O <code>FireboltForm.Insert</code> nos permite inserir componentes entre campos que são gerados pelo <code>FireboltForm</code>, ele precisa apenas de uma referencia de onde deve ser inserido e o que ele deve renderizar:</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { FireboltForm } </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;@iq-firebolt/client&quot;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">DefaultStepTemplate</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> ({</span><span style="color: #FFA657">fireboltStep</span><span style="color: #C9D1D9">}) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">		&lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">className</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;default-step&quot;</span><span style="color: #C9D1D9">&gt;Step title&lt;/</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;</span><span style="color: #7EE787">FireboltForm</span></span>
+<span class="line"><span style="color: #C9D1D9">		    </span><span style="color: #79C0FF">onSubmit</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep.goNextStep}</span></span>
+<span class="line"><span style="color: #C9D1D9">		    </span><span style="color: #79C0FF">schema</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep.fields}</span></span>
+<span class="line"><span style="color: #C9D1D9">		    </span><span style="color: #79C0FF">onGoBack</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep.goPreviousStep}</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">			{</span><span style="color: #8B949E">/* Irá renderizar &quot;something&quot; depois do ultimo campo */</span><span style="color: #C9D1D9">}</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    &lt;</span><span style="color: #7EE787">FireboltForm.Insert</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">after</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;last&quot;</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">render</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{&lt;</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;something&lt;/</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;}&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    {</span><span style="color: #8B949E">/* Irá renderizar &quot;something&quot; antes do primeiro campo */</span><span style="color: #C9D1D9">}</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    &lt;</span><span style="color: #7EE787">FireboltForm.Insert</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">before</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;first&quot;</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">render</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{&lt;</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;something&lt;/</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;}&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    {</span><span style="color: #8B949E">/* Irá renderizar &quot;something&quot; antes do campo de cpf */</span><span style="color: #C9D1D9">}</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    &lt;</span><span style="color: #7EE787">FireboltForm.Insert</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">before</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{{fieldSlug: </span><span style="color: #A5D6FF">&quot;cpf_field&quot;</span><span style="color: #C9D1D9">}} </span><span style="color: #79C0FF">render</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{&lt;</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;something&lt;/</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;}&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;/</span><span style="color: #7EE787">FireboltForm</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		&lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">	)</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">export default DefaultStepTemplate</span></span>
+<span class="line"></span></code></pre><p>A referencia pode ser <code>last</code> , <code>first</code> ou um objeto <code>{fieldSlug: "field_slug"}</code></p><table>
+<thead>
+<tr>
+<th><div style="width: 150px;">Propriedade</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>after</code></td>
+<td>Renderiza a marcação antes da referência.</td>
+</tr>
+<tr>
+<td><code>before</code></td>
+<td>Renderiza a marcação depois da referência.</td>
+</tr>
+<tr>
+<td><code>render</code></td>
+<td>Componente ou marcação que deve ser renderizada.</td>
+</tr>
+</tbody>
+</table><h3 id="stepform"><code>StepForm</code></h3><p>A função do <code>StepForm</code> é simplificar a escrita dos templates de passo.
+Ao encapsular o <code>FireboltForm</code>, todas as suas propriedades passam a ser igualmente suportadas no <code>StepForm</code> e o resultado será o mesmo, tanto utilizando o <code>StepForm</code> quanto o <code>FireboltForm</code>.
+A diferença está na forma com que ele é utilizado, pois muitas dessas propriedades não precisam ser informadas no <code>StepForm</code> , deixando o código menor.</p><p>Exemplo de template de passo com <code>FireboltForm</code></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { FireboltForm } </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;@iq-firebolt/client&quot;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> fireboltBlueberry </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;firebolt-blueberry&quot;</span><span style="color: #C9D1D9">; </span><span style="color: #8B949E">// tema</span></span>
+<span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { ActionButtons } </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;components/ActionButtons&quot;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">DefaultStepTemplate</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> ({ </span><span style="color: #FFA657">fireboltStep</span><span style="color: #C9D1D9"> }) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">autofill</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> { cpf: </span><span style="color: #A5D6FF">&quot;123.232.523.23&quot;</span><span style="color: #C9D1D9"> };</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">    &lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">      &lt;</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;my step template&lt;/</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">      &lt;</span><span style="color: #7EE787">FireboltForm</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">schema</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep?.fields}</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">onSubmit</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep?.goNextStep}</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">remoteErrors</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltStep?.remoteErrors}</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">theme</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{fireboltBlueberry}</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">autoFill</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{autofill}</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">customActionsChild</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{({ </span><span style="color: #FFA657">formData</span><span style="color: #C9D1D9"> }) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">          &lt;</span><span style="color: #7EE787">ActionButtons</span></span>
+<span class="line"><span style="color: #C9D1D9">            </span><span style="color: #79C0FF">formData</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{formData}</span></span>
+<span class="line"><span style="color: #C9D1D9">            </span><span style="color: #79C0FF">onGoBack</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{handleGoBackform}</span></span>
+<span class="line"><span style="color: #C9D1D9">            </span><span style="color: #79C0FF">beforeSubmitStep</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{runBeforeChangeStep}</span></span>
+<span class="line"><span style="color: #C9D1D9">          /&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">        )}</span></span>
+<span class="line"><span style="color: #C9D1D9">      /&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">    &lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">  );</span></span>
+<span class="line"><span style="color: #C9D1D9">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">export</span><span style="color: #FFA657"> </span><span style="color: #FF7B72">default</span><span style="color: #FFA657"> </span><span style="color: #C9D1D9">DefaultStepTemplate;</span></span></code></pre><p>Exemplo de template de passo com <code>StepForm</code></p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { StepForm } </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;@iq-firebolt/client&quot;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { ActionButtons } </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;components/ActionButtons&quot;</span><span style="color: #C9D1D9">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">DefaultStepTemplate</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> ({ </span><span style="color: #FFA657">fireboltStep</span><span style="color: #C9D1D9"> }) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">autofill</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> { cpf: </span><span style="color: #A5D6FF">&quot;123.232.523.23&quot;</span><span style="color: #C9D1D9"> };</span></span>
+<span class="line"><span style="color: #C9D1D9">  </span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">    &lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">      &lt;</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;my step template&lt;/</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">      &lt;</span><span style="color: #7EE787">StepForm</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">autoFill</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{autofill}</span></span>
+<span class="line"><span style="color: #C9D1D9">        </span><span style="color: #79C0FF">customActionsChild</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{({ </span><span style="color: #FFA657">formData</span><span style="color: #C9D1D9"> }) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">          &lt;</span><span style="color: #7EE787">ActionButtons</span></span>
+<span class="line"><span style="color: #C9D1D9">            </span><span style="color: #79C0FF">formData</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{formData}</span></span>
+<span class="line"><span style="color: #C9D1D9">            </span><span style="color: #79C0FF">onGoBack</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{handleGoBackform}</span></span>
+<span class="line"><span style="color: #C9D1D9">            </span><span style="color: #79C0FF">beforeSubmitStep</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{runBeforeChangeStep}</span></span>
+<span class="line"><span style="color: #C9D1D9">          /&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">        )}</span></span>
+<span class="line"><span style="color: #C9D1D9">      /&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">    &lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">  );</span></span>
+<span class="line"><span style="color: #C9D1D9">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">export</span><span style="color: #FFA657"> </span><span style="color: #FF7B72">default</span><span style="color: #FFA657"> </span><span style="color: #C9D1D9">DefaultStepTemplate;</span></span></code></pre><h3 id="stepforminsert"><code>StepForm.Insert</code></h3><p>Como o <code>StepForm</code> encapsula o <code>FireboltForm</code>, precisamos de um <code>Insert</code> também para o <code>StepForm</code>.
+O <code>StepForm.Insert</code> funciona exatamente igual o <code>FireboltForm.Insert</code>, nos permitindo inserir componentes nos espaços entre campos que são gerados pelo <code>FireboltForm</code>, que aqui, está dentro <code>StepForm</code> .</p><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #FF7B72">import</span><span style="color: #C9D1D9"> { StepForm } </span><span style="color: #FF7B72">from</span><span style="color: #C9D1D9"> </span><span style="color: #A5D6FF">&quot;@iq-firebolt/client&quot;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #FF7B72">const</span><span style="color: #C9D1D9"> </span><span style="color: #D2A8FF">DefaultStepTemplate</span><span style="color: #C9D1D9"> </span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9"> ({</span><span style="color: #FFA657">fireboltStep</span><span style="color: #C9D1D9">}) </span><span style="color: #FF7B72">=&gt;</span><span style="color: #C9D1D9"> {</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">	</span><span style="color: #FF7B72">return</span><span style="color: #C9D1D9"> (</span></span>
+<span class="line"><span style="color: #C9D1D9">		&lt;</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">className</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;default-step&quot;</span><span style="color: #C9D1D9">&gt;Step title&lt;/</span><span style="color: #7EE787">h1</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;</span><span style="color: #7EE787">StepForm</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">			{</span><span style="color: #8B949E">/* Irá renderizar &quot;something&quot; depois do ultimo campo */</span><span style="color: #C9D1D9">}</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    &lt;</span><span style="color: #7EE787">StepForm.Insert</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">after</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;last&quot;</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">render</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{&lt;</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;something&lt;/</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;}&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    {</span><span style="color: #8B949E">/* Irá renderizar &quot;something&quot; antes do primeiro campo */</span><span style="color: #C9D1D9">}</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    &lt;</span><span style="color: #7EE787">StepForm.Insert</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">before</span><span style="color: #FF7B72">=</span><span style="color: #A5D6FF">&quot;first&quot;</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">render</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{&lt;</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;something&lt;/</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;}&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    {</span><span style="color: #8B949E">/* Irá renderizar &quot;something&quot; antes do campo de cpf */</span><span style="color: #C9D1D9">}</span></span>
+<span class="line"><span style="color: #C9D1D9"> 		    &lt;</span><span style="color: #7EE787">StepForm.Insert</span><span style="color: #C9D1D9"> </span><span style="color: #79C0FF">before</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{{fieldSlug: </span><span style="color: #A5D6FF">&quot;cpf_field&quot;</span><span style="color: #C9D1D9">}} </span><span style="color: #79C0FF">render</span><span style="color: #FF7B72">=</span><span style="color: #C9D1D9">{&lt;</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;something&lt;/</span><span style="color: #7EE787">p</span><span style="color: #C9D1D9">&gt;}&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		  &lt;/</span><span style="color: #7EE787">StepForm</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">		&lt;/</span><span style="color: #7EE787">div</span><span style="color: #C9D1D9">&gt;</span></span>
+<span class="line"><span style="color: #C9D1D9">	)</span></span>
+<span class="line"><span style="color: #C9D1D9">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C9D1D9">export default DefaultStepTemplate</span></span></code></pre><p>A referencia pode ser <code>last</code> , <code>first</code> ou um objeto <code>{fieldSlug: "field_slug"}</code></p><table>
+<thead>
+<tr>
+<th><div style="width: 150px;">Propriedade</div></th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>after</code></td>
+<td>Renderiza a marcação antes da referência.</td>
+</tr>
+<tr>
+<td><code>before</code></td>
+<td>Renderiza a marcação depois da referência.</td>
+</tr>
+<tr>
+<td><code>render</code></td>
+<td>Componente ou marcação que deve ser renderizada.</td>
+</tr>
+</tbody>
+</table>
+	</section>
+	<nav class="block sm:hidden astro-ACGIPC2P">
+		<div style="margin: 2rem 0; text-align: center;">
+	<astro-root uid="xvEXW"><div class="theme-toggle"><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme"/></label><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme"/></label></div></astro-root>
+</div>
+
+	</nav>
+</article>
+
+
+
+			</div>
+			<aside id="grid-right" class="grid-sidebar astro-AWDJ37HD" title="Table of Contents">
+				<nav class="sidebar-nav astro-XRJMICAF" aria-labelledby="grid-right">
+	<div class="sidebar-nav-inner astro-XRJMICAF">
+		<astro-root uid="Z1gg5VA"><div><h2 class="heading">On this page</h2><ul><li class="header-link depth-2"><a href="#overview">Overview</a></li><li class="header-link depth-2"><a href="#firebolt-client">Firebolt Client</a></li><li class="header-link depth-3"><a href="#instalação">Instalação</a></li><li class="header-link depth-3"><a href="#configuração">Configuração</a></li><li class="header-link depth-3"><a href="#componentes">Componentes</a></li><li class="header-link depth-3"><a href="#wizard">Wizard</a></li><li class="header-link depth-3"><a href="#wizardstep">Wizard.Step</a></li><li class="header-link depth-3"><a href="#template-de-passo">Template de passo</a></li><li class="header-link depth-3"><a href="#fireboltform">FireboltForm</a></li><li class="header-link depth-3"><a href="#fireboltforminsert">FireboltForm.Insert</a></li><li class="header-link depth-3"><a href="#stepform">StepForm</a></li><li class="header-link depth-3"><a href="#stepforminsert">StepForm.Insert</a></li></ul></div></astro-root>
+		<div style="margin: 2rem 0; text-align: center;">
+	<astro-root uid="xvEXW"><div class="theme-toggle"><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg><input type="radio" name="theme-toggle" value="light" title="Use light theme" aria-label="Use light theme"/></label><label class=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><input type="radio" name="theme-toggle" value="dark" title="Use dark theme" aria-label="Use dark theme"/></label></div></astro-root>
+</div>
+
+	</div>
+</nav>
+
+
+
+			</aside>
+		</main> 
+	</body></html>
