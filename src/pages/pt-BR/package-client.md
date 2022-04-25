@@ -72,29 +72,26 @@ O `Wizard` é semelhante ao `Switch` do `react-router`, ele define qual componen
 - Definir um componente de fallback, ou seja, renderizar um componente durante a transição de passos, por exemplo um loader.
 
 ```jsx
-...
-import { Wizard, createFireboltProvider} from "@iq-firebolt/client";
+import { Wizard, createFireboltProvider } from "@iq-firebolt/client";
 
-const withFirebolt = createFireboltProvider({...})
+const withFirebolt = createFireboltProvider();
 
 const App = () => {
-	return (
-		<div>
-		  <h1>My form</h1>
-		  <Wizard
-		    fallback={<MyLoader />}
-		    onFinishForm={(payload) => {}}
-		    onConnectionError={(err) => {}}
-		    onBeforeChangeStep={(proceed, {leavingStep, enteringStep}) => {})
-		    onChangeStep={({sentStep, currentStep}) => {}}
-		  >
-		  </Wizard>
-		</div>
-	)
-}
+  return (
+    <div>
+      <h1>My form</h1>
+      <Wizard
+        fallback={<MyLoader />}
+        onFinishForm={(payload) => {}}
+        onConnectionError={(err) => {}}
+        onBeforeChangeStep={(proceed, { leavingStep, enteringStep }) => {}}
+        onChangeStep={({ sentStep, currentStep }) => {}}
+      ></Wizard>
+    </div>
+  );
+};
 
-export default withFirebolt(App)
-
+export default withFirebolt(App);
 ```
 
 **Props `Wizard`**
@@ -114,31 +111,32 @@ export default withFirebolt(App)
 O `Wizard.Step` funciona de forma similar ao `Route` do React router, ele fica responsável por atribuir a renderização de um componente especifico (template de passo/ step template) para um passo especifico do formulário. Com ele podemos definir utilizar um template padrão para os passos utilizando o pattern `*`:
 
 ```jsx
-...
-import { Wizard, createFireboltProvider} from "@iq-firebolt/client";
+import { Wizard, createFireboltProvider } from "@iq-firebolt/client";
 
 // template components
-import DefaultTemplate from "components/StepTemplates/Default"
-import SummaryTemplate from "components/StepTemplates/Summary"
+import DefaultTemplate from "components/StepTemplates/Default";
+import SummaryTemplate from "components/StepTemplates/Summary";
 
-const withFirebolt = createFireboltProvider({...})
+const withFirebolt = createFireboltProvider();
 
 const App = () => {
-	return (
-		<div>
-		  <h1>My form</h1>
-		  <Wizard fallback={<MyLoader />} >
-			{/* Default step template: */}
-			<Wizard.Step  match="*"  component={DefaultTemplate}  />
-			{/* Custom template */}
-			<Wizard.Step match={{slug:"summary_step"}} component={SummaryTemplate} />
-		  </Wizard>
-		</div>
-	)
-}
+  return (
+    <div>
+      <h1>My form</h1>
+      <Wizard fallback={<MyLoader />}>
+        {/* Default step template: */}
+        <Wizard.Step match="*" component={DefaultTemplate} />
+        {/* Custom template */}
+        <Wizard.Step
+          match={{ slug: "summary_step" }}
+          component={SummaryTemplate}
+        />
+      </Wizard>
+    </div>
+  );
+};
 
-export default withFirebolt(App)
-
+export default withFirebolt(App);
 ```
 
 **Props `Wizard.Step`**
@@ -234,31 +232,31 @@ export default DefaultStepTemplate;
 O `FireboltForm.Insert` nos permite inserir componentes entre campos que são gerados pelo `FireboltForm`, ele precisa apenas de uma referencia de onde deve ser inserido e o que ele deve renderizar:
 
 ```jsx
-import { FireboltForm } from "@iq-firebolt/client"
+import { FireboltForm } from "@iq-firebolt/client";
 
-const DefaultStepTemplate = ({fireboltStep}) => {
-
-	return (
-		<div>
-		  <h1 className="default-step">Step title</h1>
-		  <FireboltForm
-		    onSubmit={fireboltStep.goNextStep}
-		    schema={fireboltStep.fields}
-		    onGoBack={fireboltStep.goPreviousStep}
-		  >
-			{/* Irá renderizar "something" depois do ultimo campo */}
- 		    <FireboltForm.Insert after="last" render={<p>something</p>}>
- 		    {/* Irá renderizar "something" antes do primeiro campo */}
- 		    <FireboltForm.Insert before="first" render={<p>something</p>}>
- 		    {/* Irá renderizar "something" antes do campo de cpf */}
- 		    <FireboltForm.Insert before={{fieldSlug: "cpf_field"}} render={<p>something</p>}>
-		  </FireboltForm>
-		</div>
-	)
-}
-
-export default DefaultStepTemplate
-
+const DefaultStepTemplate = ({ fireboltStep }) => {
+  return (
+    <div>
+      <h1 className="default-step">Step title</h1>
+      <FireboltForm
+        onSubmit={fireboltStep.goNextStep}
+        schema={fireboltStep.fields}
+        onGoBack={fireboltStep.goPreviousStep}
+      >
+        {/* Irá renderizar "something" depois do ultimo campo */}
+        <FireboltForm.Insert after="last" render={<p>something</p>} />
+        {/* Irá renderizar "something" antes do primeiro campo */}
+        <FireboltForm.Insert before="first" render={<p>something</p>} />
+        {/* Irá renderizar "something" antes do campo de cpf */}
+        <FireboltForm.Insert
+          before={{ fieldSlug: "cpf_field" }}
+          render={<p>something</p>}
+        />
+      </FireboltForm>
+    </div>
+  );
+};
+export default DefaultStepTemplate;
 ```
 
 A referencia pode ser `last` , `first` ou um objeto `{fieldSlug: "field_slug"}`
@@ -342,26 +340,28 @@ Como o `StepForm` encapsula o `FireboltForm`, precisamos de um `Insert` também 
 O `StepForm.Insert` funciona exatamente igual o `FireboltForm.Insert`, nos permitindo inserir componentes nos espaços entre campos que são gerados pelo `FireboltForm`, que aqui, está dentro `StepForm` .
 
 ```jsx
-import { StepForm } from "@iq-firebolt/client"
+import { StepForm } from "@iq-firebolt/client";
 
-const DefaultStepTemplate = ({fireboltStep}) => {
+const DefaultStepTemplate = ({ fireboltStep }) => {
+  return (
+    <div>
+      <h1 className="default-step">Step title</h1>
+      <StepForm>
+        {/* Irá renderizar "something" depois do ultimo campo */}
+        <StepForm.Insert after="last" render={<p>something</p>} />
+        {/* Irá renderizar "something" antes do primeiro campo */}
+        <StepForm.Insert before="first" render={<p>something</p>} />
+        {/* Irá renderizar "something" antes do campo de cpf */}
+        <StepForm.Insert
+          before={{ fieldSlug: "cpf_field" }}
+          render={<p>something</p>}
+        />
+      </StepForm>
+    </div>
+  );
+};
 
-	return (
-		<div>
-		  <h1 className="default-step">Step title</h1>
-		  <StepForm>
-			{/* Irá renderizar "something" depois do ultimo campo */}
- 		    <StepForm.Insert after="last" render={<p>something</p>}>
- 		    {/* Irá renderizar "something" antes do primeiro campo */}
- 		    <StepForm.Insert before="first" render={<p>something</p>}>
- 		    {/* Irá renderizar "something" antes do campo de cpf */}
- 		    <StepForm.Insert before={{fieldSlug: "cpf_field"}} render={<p>something</p>}>
-		  </StepForm>
-		</div>
-	)
-}
-
-export default DefaultStepTemplate
+export default DefaultStepTemplate;
 ```
 
 A referencia pode ser `last` , `first` ou um objeto `{fieldSlug: "field_slug"}`
