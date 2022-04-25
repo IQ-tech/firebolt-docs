@@ -11,7 +11,7 @@ date: 2022-04-20T19:16:24.775Z
 
 Uma biblioteca react que faz parte da stack Firebolt e tem como objetivos:
 
-- Integrar-se automaticamente com o serviço do Firebolt de onde os dados dos passos dos formulários são processados;
+- Integrar-se automaticamente com o serviço do Firebolt onde os dados dos passos dos formulários são processados;
 - Fornecer uma série de componentes que permitem a criação desses formulários em aplicações front-end de forma modular.
 
 ### Instalação
@@ -66,9 +66,9 @@ export default withFirebolt(App);
 
 ### `Wizard`
 
-O `Wizard` é semelhante ao `Switch` do `react-router`, a função principal dele é renderizar um template de passo por vez (de acordo com o passo do formulário que o usuário estiver), ou seja, com ele é possível definir um componente especifico para cada passo do formulário, mas podemos definir um componente padrão que pode ser utilizado na maioria dos passos. Alem disso ele também tem algumas funcionalidades importantes como:
+O `Wizard` é semelhante ao `Switch` do `react-router`, ele define qual componente renderizar a cada passo do formulário e também é possível definir um componente padrão para ser utilizado. Além disso, possui características importantes como:
 
-- Rodar callbacks em situações especificas do formulário, por exemplo quando houver uma mudança de passo, quando houver um erro de conexão ou quando o formulário for finalizado;
+- Rodar callbacks em situações especificas do formulário, por exemplo, na mudança de passo, caso haja um erro de conexão ou quando o formulário for finalizado;
 - Definir um componente de fallback, ou seja, renderizar um componente durante a transição de passos, por exemplo um loader.
 
 ```jsx
@@ -99,13 +99,13 @@ export default withFirebolt(App)
 
 **Props `Wizard`**
 
-| <div style="width: 150px;">Propriedade</div> | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `fallback`                                   | Recebe um componente ou marcação que deve ser renderizada durante a requisição de transição de passos                                                                                                                                                                                                                                                                                                                                          |
-| `onFinishForm`                               | Callback que roda ao avançar o último passo, a função recebe um payload como argumento (ultima resposta da Firebolt api)                                                                                                                                                                                                                                                                                                                       |
-| `onConnectionError`                          | Esse callback deve rodar quando ocorre algum problema de conexão entre o Firebolt client e a API                                                                                                                                                                                                                                                                                                                                               |
-| `onBeforeChangeStep`                         | Quando o client recebe os dados de um novo passo da api, a transição não ocorre instantaneamente, esse callback pode ser utilizado para rodar algo antes que a transição ocorra, ou seja: Client requisita novo passo -> api retorna novo passo -> onBeforeChangeStep -> mudança de passo no estado atual do client, isso permite por exemplo redirecionar o usuário para algum site externo antes de renderizar o próximo passo do formulário |
-| `onChangeStep`                               | Podemos usar esse callback para rodar algo após a transição de um passo para outro                                                                                                                                                                                                                                                                                                                                                             |
+| <div style="width: 150px;">Propriedade</div> | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `fallback`                                   | Recebe um componente ou marcação que deve ser renderizada durante a requisição de transição de passos .                                                                                                                                                                                                                                                                                                                                         |
+| `onFinishForm`                               | Callback que roda ao avançar o último passo, a função recebe um payload como argumento (ultima resposta da Firebolt api).                                                                                                                                                                                                                                                                                                                       |
+| `onConnectionError`                          | Esse callback deve rodar quando ocorre algum problema de conexão entre o Firebolt client e a API.                                                                                                                                                                                                                                                                                                                                               |
+| `onBeforeChangeStep`                         | Quando o client recebe os dados de um novo passo da api, a transição não ocorre instantaneamente, esse callback pode ser utilizado para rodar algo antes que a transição ocorra, ou seja: Client requisita novo passo -> api retorna novo passo -> onBeforeChangeStep -> mudança de passo no estado atual do client, isso permite por exemplo redirecionar o usuário para algum site externo antes de renderizar o próximo passo do formulário. |
+| `onChangeStep`                               | Podemos usar esse callback para rodar algo após a transição de um passo para outro.                                                                                                                                                                                                                                                                                                                                                             |
 
 > O `Wizard` renderiza/monta apenas um componente por vez, ou seja, se o formulário avançar para o próximo passo, o componente do template do passo atual será desmontado e o `fallback` ocupará o seu lugar.
 
@@ -127,9 +127,7 @@ const App = () => {
 	return (
 		<div>
 		  <h1>My form</h1>
-		  <Wizard
-		    fallback={<MyLoader />}
-		   >
+		  <Wizard fallback={<MyLoader />} >
 			{/* Default step template: */}
 			<Wizard.Step  match="*"  component={DefaultTemplate}  />
 			{/* Custom template */}
@@ -185,8 +183,8 @@ export default DefaultStepTemplate;
 | `goNextStep`                                 | Função que dispara a transição para o próximo passo. Recebe como argumento um payload, ou seja um mapa chave-valor do slug do campo e o valor que deve ser enviado para a firebolt api. |
 | `goPreviousStep`                             | Função que dispara a transição para o passo anterior do formulário.                                                                                                                     |
 | `position`                                   | Numero da posição do passo atual em relação ao total de passos, pode ser usado para renderizar um contador na tela como "passo 2/4" (Inicia em 1).                                      |
-| `remoteErrors`                               | Erros que voltaram da firebolt api por causa de alguma validação de campo                                                                                                               |
-| `slug`                                       | slug identificador do passo atual, o mesmo utilizado no `Wizard.Step`.                                                                                                                  |
+| `remoteErrors`                               | Erros validação de campo da api.                                                                                                                                                        |
+| `slug`                                       | Slug identificador do passo atual, o mesmo utilizado no `Wizard.Step`.                                                                                                                  |
 | `type`                                       | Tipo do passo atual (`form` ou `custom`).                                                                                                                                               |
 | `webhookResult`                              | Resultado da chamada de webhook que pode ter ocorrido entre o passo anterior e o passo atual, ele pode conter qualquer dado que tenha vindo de uma api terceira.                        |
 
@@ -220,7 +218,7 @@ export default DefaultStepTemplate;
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `autofill`                                   | Recebe um objeto chave-valor (slug do campo e valor) que automaticamente preenche o payload do formulário, ou seja, se o objeto `{"name": "Marty Mcfly"}` for passado para essa prop, o campo de nome deve ser automaticamente preenchido no formulário. |
 | `className`                                  | Adiciona uma classe customizada ao elemento `form`.                                                                                                                                                                                                      |
-| `customActionsChild`                         | Permite passar um componente para lidar com o envio ou regressão do formulário geralmente são passados botões customizados.                                                                                                                              |
+| `customActionsChild`                         | Permite passar um componente para lidar com o envio ou regressão do formulário. Geralmente são passados botões customizados.                                                                                                                             |
 | `onChange`                                   | Esse callback roda sempre que ocorre alguma alteração nos dados do formulário, ele passa o payload atualizado do formulário como argumento do callback.                                                                                                  |
 | `onFocusField`                               | Recebe uma função de callback que retorna informações a respeito do campo em foco (slug do campo e valor).                                                                                                                                               |
 | `onGoBack`                                   | Função que deve rodar ao clicar no botão de voltar do passo.                                                                                                                                                                                             |
@@ -233,7 +231,7 @@ export default DefaultStepTemplate;
 
 ### `FireboltForm.Insert`
 
-O `FireboltForm.Insert` permite a gente inserir componentes nos espaços entre campos que são gerados pelo `FireboltForm`, ele precisa apenas de uma referencia de onde deve ser inserido e o que ele deve renderizar:
+O `FireboltForm.Insert` nos permite inserir componentes entre campos que são gerados pelo `FireboltForm`, ele precisa apenas de uma referencia de onde deve ser inserido e o que ele deve renderizar:
 
 ```jsx
 import { FireboltForm } from "@iq-firebolt/client"
@@ -263,13 +261,13 @@ export default DefaultStepTemplate
 
 ```
 
-a referencia pode ser `last` , `first` ou um objeto `{fieldSlug: "field_slug"}`
+A referencia pode ser `last` , `first` ou um objeto `{fieldSlug: "field_slug"}`
 
-| <div style="width: 150px;">Propriedade</div> | Descrição                                       |
-| -------------------------------------------- | ----------------------------------------------- |
-| `after`                                      | Renderiza a marcação antes da referência.       |
-| `before`                                     | Renderiza a marcação depois da referência.      |
-| `render`                                     | Componente ou marcação que deve ser renderizada |
+| <div style="width: 150px;">Propriedade</div> | Descrição                                        |
+| -------------------------------------------- | ------------------------------------------------ |
+| `after`                                      | Renderiza a marcação antes da referência.        |
+| `before`                                     | Renderiza a marcação depois da referência.       |
+| `render`                                     | Componente ou marcação que deve ser renderizada. |
 
 ### `StepForm`
 
@@ -366,10 +364,10 @@ const DefaultStepTemplate = ({fireboltStep}) => {
 export default DefaultStepTemplate
 ```
 
-a referencia pode ser `last` , `first` ou um objeto `{fieldSlug: "field_slug"}`
+A referencia pode ser `last` , `first` ou um objeto `{fieldSlug: "field_slug"}`
 
-| <div style="width: 150px;">Propriedade</div> | Descrição                                       |
-| -------------------------------------------- | ----------------------------------------------- |
-| `after`                                      | Renderiza a marcação antes da referência.       |
-| `before`                                     | Renderiza a marcação depois da referência.      |
-| `render`                                     | Componente ou marcação que deve ser renderizada |
+| <div style="width: 150px;">Propriedade</div> | Descrição                                        |
+| -------------------------------------------- | ------------------------------------------------ |
+| `after`                                      | Renderiza a marcação antes da referência.        |
+| `before`                                     | Renderiza a marcação depois da referência.       |
+| `render`                                     | Componente ou marcação que deve ser renderizada. |
