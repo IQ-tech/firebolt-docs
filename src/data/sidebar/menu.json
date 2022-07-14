@@ -106,7 +106,7 @@
         {
           "header": false,
           "text": "json-schema",
-          "page": "schema"
+          "page": "json-schema"
         },
         {
           "header": true,
